@@ -21,7 +21,7 @@ All results are in [results/results_summary.md](results/results_summary.md).
 ## How to run
 
 ```bash
-pip install torch torch_geometric networkx matplotlib pandas scikit-learn tabulate streamlit
+pip install torch torch_geometric networkx matplotlib pandas scikit-learn tabulate streamlit   # + Node 18+ for demo-web/
 python src/run_all.py                 # check p0 p1 p2 p3 p4 on PolitiFact (~5 min on CPU once models are cached)
 python src/run_all.py p1g             # optional greedy attack (~10 min per model on CPU)
 python src/run_all.py p1g --arch GCN  # ...or one model per process, to parallelise
@@ -34,11 +34,42 @@ Stages: `check` (data sanity), `p0` (baselines), `p1` (attack), `p2` (defenses),
 Trained weights are cached in `results/models/`. Delete a file there to retrain that model.
 `run_all.ipynb` runs the same pipeline in Colab.
 
-### Live demo (offline: saved weights + cache only, no training, no internet)
+### Live web demo: SpreadShield (`demo-web/`, main presentation app)
+
+This is a React + Vite front end that replays the saved test stories. It has no backend and runs fully offline after one `npm install`: fonts are bundled locally and there are no CDNs. Every number comes from `demo-web/src/data/*.json`, which is exported from our real outputs.
+
+```bash
+cd demo-web
+npm install                          # once, needs internet
+npm run dev                          # http://localhost:5173 (or: npm run build && npm run preview -> :4173)
+```
+
+Keys:
+- `→` / `←`: next / previous step
+- `1`–`3`: pick a story
+- `T`: guided tour (about 75 s)
+- `Space`: pause / resume the tour
+- `R`: reset
+- `F`: fullscreen (hides the top bar)
+- `D`: dashboard
+
+Rebuild the data and re-check it (needs `data/`):
+
+```bash
+python src/export_demo_json.py       # results/demo_cache.pt + results/*.csv -> demo-web/src/data/{stories,results}.json
+python src/check_demo_numbers.py     # cross-checks every number shown against results_summary.md and the CSVs (71 checks)
+cd demo-web && npm run build && npx vite preview --port 4173 &   # then:
+npm run shots                        # Playwright (system Edge): screenshots of every step at 1920x1080 and 1366x768
+                                     # into demo-web/screenshots/, plus one headless run of the guided tour
+```
+
+Story headlines come from FakeNewsNet `politifact_fake.csv`, matched through the GNN-FakeNews `pol_id_twitter_mapping.pkl`. Both files are saved under `data/meta/`. If they are missing, the demo falls back to "PolitiFact story #N". User handles such as `@user_8252` are display placeholders.
+
+### Backup demos (offline: saved weights + cache only, no training, no internet)
 
 ```bash
 python src/make_demo_cache.py   # once: picks 3 fake PolitiFact stories, writes results/demo_cache.pt (needs data/)
-streamlit run app.py            # the app: 4 steps (clean -> 20% smart bots -> bot filter -> adversarial training)
+streamlit run app.py            # Streamlit app: 4 steps (clean -> 20% smart bots -> bot filter -> adversarial training)
 python src/demo.py              # fallback: same 4 steps in the terminal + results/demo_flip.png
 ```
 

@@ -1,5 +1,5 @@
 # UPFD raw/processed data (downloaded automatically; contains all files > 50 MB)
-data/
+/data/
 __pycache__/
 .ipynb_checkpoints/
 .DS_Store

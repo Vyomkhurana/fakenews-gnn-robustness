@@ -1,0 +1,3589 @@
+[
+ {
+  "testIndex": 184,
+  "newsId": "politifact15349",
+  "headline": "'The Daily Show's' Michelle Wolf Lands Her Own Netflix Late-Night Show (Exclusive)",
+  "label": "PolitiFact story #184",
+  "truth": "FAKE",
+  "n": 47,
+  "users": 46,
+  "k": 9,
+  "edgeCount": 46,
+  "maxDepth": 2,
+  "nodes": [
+   {
+    "id": 0,
+    "type": "news",
+    "x": 0.0,
+    "y": 0.0,
+    "depth": 0,
+    "order": 0,
+    "handle": "news",
+    "followersPct": 83,
+    "statusesPct": 65,
+    "agePct": 49
+   },
+   {
+    "id": 1,
+    "type": "user",
+    "x": 140.6,
+    "y": -66.8,
+    "depth": 1,
+    "order": 1,
+    "handle": "@user_4999",
+    "followersPct": 11,
+    "statusesPct": 69,
+    "agePct": 67
+   },
+   {
+    "id": 2,
+    "type": "user",
+    "x": -73.6,
+    "y": 153.3,
+    "depth": 1,
+    "order": 2,
+    "handle": "@user_9997",
+    "followersPct": 46,
+    "statusesPct": 64,
+    "agePct": 8
+   },
+   {
+    "id": 3,
+    "type": "user",
+    "x": -8.5,
+    "y": 213.9,
+    "depth": 1,
+    "order": 3,
+    "handle": "@user_7121",
+    "followersPct": 14,
+    "statusesPct": 34,
+    "agePct": 85
+   },
+   {
+    "id": 4,
+    "type": "user",
+    "x": 184.5,
+    "y": -10.2,
+    "depth": 1,
+    "order": 4,
+    "handle": "@user_2934",
+    "followersPct": 85,
+    "statusesPct": 49,
+    "agePct": 37
+   },
+   {
+    "id": 5,
+    "type": "user",
+    "x": 225.8,
+    "y": -243.3,
+    "depth": 1,
+    "order": 5,
+    "handle": "@user_3552",
+    "followersPct": 86,
+    "statusesPct": 65,
+    "agePct": 26
+   },
+   {
+    "id": 6,
+    "type": "user",
+    "x": 35.4,
+    "y": 193.9,
+    "depth": 1,
+    "order": 6,
+    "handle": "@user_9937",
+    "followersPct": 31,
+    "statusesPct": 41,
+    "agePct": 18
+   },
+   {
+    "id": 7,
+    "type": "user",
+    "x": -85.5,
+    "y": -172.0,
+    "depth": 1,
+    "order": 7,
+    "handle": "@user_8275",
+    "followersPct": 3,
+    "statusesPct": 12,
+    "agePct": 98
+   },
+   {
+    "id": 8,
+    "type": "user",
+    "x": -182.8,
+    "y": 100.6,
+    "depth": 1,
+    "order": 8,
+    "handle": "@user_9729",
+    "followersPct": 20,
+    "statusesPct": 43,
+    "agePct": 78
+   },
+   {
+    "id": 9,
+    "type": "user",
+    "x": 153.3,
+    "y": 43.3,
+    "depth": 1,
+    "order": 9,
+    "handle": "@user_8462",
+    "followersPct": 62,
+    "statusesPct": 98,
+    "agePct": 31
+   },
+   {
+    "id": 10,
+    "type": "user",
+    "x": 126.1,
+    "y": 164.5,
+    "depth": 1,
+    "order": 10,
+    "handle": "@user_9028",
+    "followersPct": 5,
+    "statusesPct": 21,
+    "agePct": 75
+   },
+   {
+    "id": 11,
+    "type": "user",
+    "x": -12.6,
+    "y": 147.1,
+    "depth": 1,
+    "order": 11,
+    "handle": "@user_9885",
+    "followersPct": 37,
+    "statusesPct": 98,
+    "agePct": 83
+   },
+   {
+    "id": 12,
+    "type": "user",
+    "x": -135.9,
+    "y": 55.1,
+    "depth": 1,
+    "order": 12,
+    "handle": "@user_8319",
+    "followersPct": 83,
+    "statusesPct": 65,
+    "agePct": 49
+   },
+   {
+    "id": 13,
+    "type": "user",
+    "x": -114.7,
+    "y": 108.2,
+    "depth": 1,
+    "order": 13,
+    "handle": "@user_6228",
+    "followersPct": 13,
+    "statusesPct": 19,
+    "agePct": 98
+   },
+   {
+    "id": 14,
+    "type": "user",
+    "x": 112.9,
+    "y": -15.5,
+    "depth": 1,
+    "order": 14,
+    "handle": "@user_3016",
+    "followersPct": 83,
+    "statusesPct": 65,
+    "agePct": 49
+   },
+   {
+    "id": 15,
+    "type": "user",
+    "x": -154.2,
+    "y": 148.3,
+    "depth": 1,
+    "order": 15,
+    "handle": "@user_8823",
+    "followersPct": 38,
+    "statusesPct": 17,
+    "agePct": 8
+   },
+   {
+    "id": 16,
+    "type": "user",
+    "x": -51.6,
+    "y": 82.0,
+    "depth": 1,
+    "order": 16,
+    "handle": "@user_5194",
+    "followersPct": 22,
+    "statusesPct": 31,
+    "agePct": 78
+   },
+   {
+    "id": 17,
+    "type": "user",
+    "x": -197.7,
+    "y": 44.0,
+    "depth": 1,
+    "order": 17,
+    "handle": "@user_6506",
+    "followersPct": 24,
+    "statusesPct": 33,
+    "agePct": 64
+   },
+   {
+    "id": 18,
+    "type": "user",
+    "x": 121.1,
+    "y": 106.3,
+    "depth": 1,
+    "order": 18,
+    "handle": "@user_6592",
+    "followersPct": 8,
+    "statusesPct": 65,
+    "agePct": 62
+   },
+   {
+    "id": 19,
+    "type": "user",
+    "x": 168.6,
+    "y": 129.7,
+    "depth": 1,
+    "order": 19,
+    "handle": "@user_3687",
+    "followersPct": 32,
+    "statusesPct": 25,
+    "agePct": 76
+   },
+   {
+    "id": 20,
+    "type": "user",
+    "x": -95.5,
+    "y": -22.7,
+    "depth": 1,
+    "order": 20,
+    "handle": "@user_8358",
+    "followersPct": 16,
+    "statusesPct": 37,
+    "agePct": 74
+   },
+   {
+    "id": 21,
+    "type": "user",
+    "x": 33.2,
+    "y": -164.8,
+    "depth": 1,
+    "order": 21,
+    "handle": "@user_7289",
+    "followersPct": 83,
+    "statusesPct": 65,
+    "agePct": 49
+   },
+   {
+    "id": 22,
+    "type": "user",
+    "x": 193.1,
+    "y": 82.5,
+    "depth": 1,
+    "order": 22,
+    "handle": "@user_9982",
+    "followersPct": 82,
+    "statusesPct": 14,
+    "agePct": 31
+   },
+   {
+    "id": 23,
+    "type": "user",
+    "x": -11.1,
+    "y": -195.0,
+    "depth": 1,
+    "order": 23,
+    "handle": "@user_2177",
+    "followersPct": 9,
+    "statusesPct": 94,
+    "agePct": 14
+   },
+   {
+    "id": 24,
+    "type": "user",
+    "x": -148.2,
+    "y": -64.8,
+    "depth": 1,
+    "order": 24,
+    "handle": "@user_3716",
+    "followersPct": 49,
+    "statusesPct": 93,
+    "agePct": 25
+   },
+   {
+    "id": 25,
+    "type": "user",
+    "x": 83.1,
+    "y": 54.9,
+    "depth": 1,
+    "order": 25,
+    "handle": "@user_7452",
+    "followersPct": 83,
+    "statusesPct": 65,
+    "agePct": 49
+   },
+   {
+    "id": 26,
+    "type": "user",
+    "x": -120.0,
+    "y": -335.7,
+    "depth": 1,
+    "order": 26,
+    "handle": "@user_5631",
+    "followersPct": 98,
+    "statusesPct": 56,
+    "agePct": 17
+   },
+   {
+    "id": 27,
+    "type": "user",
+    "x": -174.1,
+    "y": -104.4,
+    "depth": 1,
+    "order": 27,
+    "handle": "@user_5573",
+    "followersPct": 20,
+    "statusesPct": 70,
+    "agePct": 98
+   },
+   {
+    "id": 28,
+    "type": "user",
+    "x": 74.8,
+    "y": -92.3,
+    "depth": 1,
+    "order": 28,
+    "handle": "@user_2273",
+    "followersPct": 52,
+    "statusesPct": 45,
+    "agePct": 39
+   },
+   {
+    "id": 29,
+    "type": "user",
+    "x": -305.6,
+    "y": 11.5,
+    "depth": 1,
+    "order": 29,
+    "handle": "@user_9884",
+    "followersPct": 94,
+    "statusesPct": 30,
+    "agePct": 20
+   },
+   {
+    "id": 30,
+    "type": "user",
+    "x": -131.4,
+    "y": -139.3,
+    "depth": 1,
+    "order": 30,
+    "handle": "@user_5189",
+    "followersPct": 0,
+    "statusesPct": 12,
+    "agePct": 42
+   },
+   {
+    "id": 31,
+    "type": "user",
+    "x": 5.6,
+    "y": -102.3,
+    "depth": 1,
+    "order": 31,
+    "handle": "@user_8143",
+    "followersPct": 21,
+    "statusesPct": 22,
+    "agePct": 31
+   },
+   {
+    "id": 32,
+    "type": "user",
+    "x": -199.0,
+    "y": -34.9,
+    "depth": 1,
+    "order": 32,
+    "handle": "@user_7942",
+    "followersPct": 21,
+    "statusesPct": 22,
+    "agePct": 31
+   },
+   {
+    "id": 33,
+    "type": "user",
+    "x": 114.2,
+    "y": -139.3,
+    "depth": 1,
+    "order": 33,
+    "handle": "@user_8118",
+    "followersPct": 53,
+    "statusesPct": 16,
+    "agePct": 43
+   },
+   {
+    "id": 34,
+    "type": "user",
+    "x": 162.0,
+    "y": -113.0,
+    "depth": 1,
+    "order": 34,
+    "handle": "@user_2439",
+    "followersPct": 18,
+    "statusesPct": 12,
+    "agePct": 18
+   },
+   {
+    "id": 35,
+    "type": "user",
+    "x": 107.2,
+    "y": 252.2,
+    "depth": 1,
+    "order": 35,
+    "handle": "@user_4063",
+    "followersPct": 96,
+    "statusesPct": 39,
+    "agePct": 14
+   },
+   {
+    "id": 36,
+    "type": "user",
+    "x": 211.8,
+    "y": 30.3,
+    "depth": 1,
+    "order": 36,
+    "handle": "@user_9254",
+    "followersPct": 56,
+    "statusesPct": 46,
+    "agePct": 6
+   },
+   {
+    "id": 37,
+    "type": "user",
+    "x": 377.8,
+    "y": -313.8,
+    "depth": 2,
+    "order": 37,
+    "handle": "@user_1320",
+    "followersPct": 94,
+    "statusesPct": 82,
+    "agePct": 2
+   },
+   {
+    "id": 38,
+    "type": "user",
+    "x": 290.7,
+    "y": -397.8,
+    "depth": 2,
+    "order": 38,
+    "handle": "@user_5477",
+    "followersPct": 44,
+    "statusesPct": 65,
+    "agePct": 2
+   },
+   {
+    "id": 39,
+    "type": "user",
+    "x": 342.8,
+    "y": -365.5,
+    "depth": 2,
+    "order": 39,
+    "handle": "@user_5290",
+    "followersPct": 83,
+    "statusesPct": 65,
+    "agePct": 49
+   },
+   {
+    "id": 40,
+    "type": "user",
+    "x": -201.0,
+    "y": -482.1,
+    "depth": 2,
+    "order": 40,
+    "handle": "@user_8707",
+    "followersPct": 50,
+    "statusesPct": 16,
+    "agePct": 65
+   },
+   {
+    "id": 41,
+    "type": "user",
+    "x": -243.0,
+    "y": -443.9,
+    "depth": 2,
+    "order": 41,
+    "handle": "@user_6588",
+    "followersPct": 44,
+    "statusesPct": 42,
+    "agePct": 97
+   },
+   {
+    "id": 42,
+    "type": "user",
+    "x": -94.0,
+    "y": -496.7,
+    "depth": 2,
+    "order": 42,
+    "handle": "@user_5527",
+    "followersPct": 8,
+    "statusesPct": 8,
+    "agePct": 92
+   },
+   {
+    "id": 43,
+    "type": "user",
+    "x": -150.6,
+    "y": -500.0,
+    "depth": 2,
+    "order": 43,
+    "handle": "@user_8594",
+    "followersPct": 19,
+    "statusesPct": 15,
+    "agePct": 50
+   },
+   {
+    "id": 44,
+    "type": "user",
+    "x": -473.5,
+    "y": -16.4,
+    "depth": 2,
+    "order": 44,
+    "handle": "@user_1497",
+    "followersPct": 20,
+    "statusesPct": 14,
+    "agePct": 44
+   },
+   {
+    "id": 45,
+    "type": "user",
+    "x": -471.2,
+    "y": 54.5,
+    "depth": 2,
+    "order": 45,
+    "handle": "@user_6175",
+    "followersPct": 18,
+    "statusesPct": 12,
+    "agePct": 41
+   },
+   {
+    "id": 46,
+    "type": "user",
+    "x": 178.7,
+    "y": 414.7,
+    "depth": 2,
+    "order": 46,
+    "handle": "@user_9452",
+    "followersPct": 83,
+    "statusesPct": 65,
+    "agePct": 49
+   },
+   {
+    "id": 47,
+    "type": "bot",
+    "x": -84.9,
+    "y": -98.2,
+    "depth": 1,
+    "order": 0,
+    "handle": "@user_1395",
+    "followersPct": 34,
+    "statusesPct": 40,
+    "agePct": 5
+   },
+   {
+    "id": 48,
+    "type": "bot",
+    "x": -39.8,
+    "y": -147.5,
+    "depth": 1,
+    "order": 1,
+    "handle": "@user_9174",
+    "followersPct": 73,
+    "statusesPct": 21,
+    "agePct": 14
+   },
+   {
+    "id": 49,
+    "type": "bot",
+    "x": 78.6,
+    "y": -178.1,
+    "depth": 1,
+    "order": 2,
+    "handle": "@user_2067",
+    "followersPct": 95,
+    "statusesPct": 62,
+    "agePct": 0
+   },
+   {
+    "id": 50,
+    "type": "bot",
+    "x": 200.1,
+    "y": -57.0,
+    "depth": 1,
+    "order": 3,
+    "handle": "@user_3286",
+    "followersPct": 70,
+    "statusesPct": 69,
+    "agePct": 0
+   },
+   {
+    "id": 51,
+    "type": "bot",
+    "x": 77.6,
+    "y": 170.4,
+    "depth": 1,
+    "order": 4,
+    "handle": "@user_1047",
+    "followersPct": 83,
+    "statusesPct": 42,
+    "agePct": 0
+   },
+   {
+    "id": 52,
+    "type": "bot",
+    "x": -161.2,
+    "y": 2.1,
+    "depth": 1,
+    "order": 5,
+    "handle": "@user_4993",
+    "followersPct": 34,
+    "statusesPct": 40,
+    "agePct": 5
+   },
+   {
+    "id": 53,
+    "type": "bot",
+    "x": 43.4,
+    "y": 117.1,
+    "depth": 1,
+    "order": 6,
+    "handle": "@user_3496",
+    "followersPct": 36,
+    "statusesPct": 12,
+    "agePct": 3
+   },
+   {
+    "id": 54,
+    "type": "bot",
+    "x": -113.7,
+    "y": 187.5,
+    "depth": 1,
+    "order": 7,
+    "handle": "@user_8252",
+    "followersPct": 99,
+    "statusesPct": 93,
+    "agePct": 3
+   },
+   {
+    "id": 55,
+    "type": "bot",
+    "x": -57.4,
+    "y": 205.5,
+    "depth": 1,
+    "order": 8,
+    "handle": "@user_2031",
+    "followersPct": 95,
+    "statusesPct": 36,
+    "agePct": 2
+   }
+  ],
+  "edges": [
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    0,
+    3
+   ],
+   [
+    0,
+    4
+   ],
+   [
+    0,
+    5
+   ],
+   [
+    0,
+    6
+   ],
+   [
+    0,
+    7
+   ],
+   [
+    0,
+    8
+   ],
+   [
+    0,
+    9
+   ],
+   [
+    0,
+    10
+   ],
+   [
+    0,
+    11
+   ],
+   [
+    0,
+    12
+   ],
+   [
+    0,
+    13
+   ],
+   [
+    0,
+    14
+   ],
+   [
+    0,
+    15
+   ],
+   [
+    0,
+    16
+   ],
+   [
+    0,
+    17
+   ],
+   [
+    0,
+    18
+   ],
+   [
+    0,
+    19
+   ],
+   [
+    0,
+    20
+   ],
+   [
+    0,
+    21
+   ],
+   [
+    0,
+    22
+   ],
+   [
+    0,
+    23
+   ],
+   [
+    0,
+    24
+   ],
+   [
+    0,
+    25
+   ],
+   [
+    0,
+    26
+   ],
+   [
+    0,
+    27
+   ],
+   [
+    0,
+    28
+   ],
+   [
+    0,
+    29
+   ],
+   [
+    0,
+    30
+   ],
+   [
+    0,
+    31
+   ],
+   [
+    0,
+    32
+   ],
+   [
+    0,
+    33
+   ],
+   [
+    0,
+    34
+   ],
+   [
+    0,
+    35
+   ],
+   [
+    0,
+    36
+   ],
+   [
+    5,
+    37
+   ],
+   [
+    5,
+    38
+   ],
+   [
+    5,
+    39
+   ],
+   [
+    26,
+    40
+   ],
+   [
+    26,
+    41
+   ],
+   [
+    26,
+    42
+   ],
+   [
+    26,
+    43
+   ],
+   [
+    29,
+    44
+   ],
+   [
+    29,
+    45
+   ],
+   [
+    35,
+    46
+   ]
+  ],
+  "bots": [
+   47,
+   48,
+   49,
+   50,
+   51,
+   52,
+   53,
+   54,
+   55
+  ],
+  "p": [
+   0.543,
+   0.444,
+   0.444,
+   0.536
+  ],
+  "importance": [
+   [
+    0.0,
+    0.837,
+    0.859,
+    0.82,
+    0.941,
+    0.918,
+    0.873,
+    0.786,
+    0.861,
+    0.806,
+    0.868,
+    0.933,
+    0.866,
+    1.0,
+    0.914,
+    0.872,
+    0.82,
+    0.765,
+    0.857,
+    0.883,
+    0.872,
+    0.799,
+    0.847,
+    0.968,
+    0.929,
+    0.855,
+    0.877,
+    0.916,
+    0.975,
+    0.951,
+    0.957,
+    0.881,
+    0.816,
+    0.907,
+    0.897,
+    0.87,
+    0.869,
+    0.841,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.715,
+    0.727,
+    0.746,
+    0.754,
+    0.755,
+    0.749,
+    0.672,
+    0.781,
+    0.686,
+    0.779,
+    0.802,
+    0.761,
+    0.85,
+    0.812,
+    0.741,
+    0.699,
+    0.675,
+    0.817,
+    0.811,
+    0.8,
+    0.68,
+    0.729,
+    0.839,
+    0.792,
+    0.728,
+    0.75,
+    0.789,
+    0.843,
+    0.847,
+    0.813,
+    0.716,
+    0.74,
+    0.759,
+    0.745,
+    0.76,
+    0.765,
+    0.745,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.825,
+    0.751,
+    0.673,
+    0.846,
+    0.841,
+    0.578,
+    0.825,
+    1.0,
+    0.974
+   ],
+   [
+    0.0,
+    0.715,
+    0.727,
+    0.746,
+    0.754,
+    0.755,
+    0.749,
+    0.672,
+    0.781,
+    0.686,
+    0.779,
+    0.802,
+    0.761,
+    0.85,
+    0.812,
+    0.741,
+    0.699,
+    0.675,
+    0.817,
+    0.811,
+    0.8,
+    0.68,
+    0.729,
+    0.839,
+    0.792,
+    0.728,
+    0.75,
+    0.789,
+    0.843,
+    0.847,
+    0.813,
+    0.716,
+    0.74,
+    0.759,
+    0.745,
+    0.76,
+    0.765,
+    0.745,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.825,
+    0.751,
+    0.673,
+    0.846,
+    0.841,
+    0.578,
+    0.825,
+    1.0,
+    0.974
+   ],
+   [
+    0.0,
+    0.62,
+    0.703,
+    0.646,
+    0.774,
+    0.767,
+    0.788,
+    0.742,
+    0.85,
+    0.659,
+    0.691,
+    0.85,
+    0.694,
+    1.0,
+    0.866,
+    0.687,
+    0.745,
+    0.616,
+    0.859,
+    0.865,
+    0.854,
+    0.626,
+    0.685,
+    0.788,
+    0.729,
+    0.776,
+    0.744,
+    0.848,
+    0.87,
+    0.802,
+    0.72,
+    0.763,
+    0.755,
+    0.798,
+    0.79,
+    0.792,
+    0.727,
+    0.735,
+    0.77,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.748,
+    0.712,
+    0.777,
+    0.77,
+    0.74,
+    0.699,
+    0.751,
+    0.79,
+    0.838
+   ]
+  ],
+  "filter": {
+   "checked": 55,
+   "flagged": 0,
+   "flaggedBots": 0
+  },
+  "advBots": [
+   {
+    "followersPct": 34,
+    "statusesPct": 40,
+    "agePct": 5
+   },
+   {
+    "followersPct": 73,
+    "statusesPct": 21,
+    "agePct": 14
+   },
+   {
+    "followersPct": 95,
+    "statusesPct": 62,
+    "agePct": 0
+   },
+   {
+    "followersPct": 70,
+    "statusesPct": 69,
+    "agePct": 0
+   },
+   {
+    "followersPct": 83,
+    "statusesPct": 42,
+    "agePct": 0
+   },
+   {
+    "followersPct": 34,
+    "statusesPct": 40,
+    "agePct": 5
+   },
+   {
+    "followersPct": 36,
+    "statusesPct": 12,
+    "agePct": 3
+   },
+   {
+    "followersPct": 99,
+    "statusesPct": 93,
+    "agePct": 3
+   },
+   {
+    "followersPct": 95,
+    "statusesPct": 36,
+    "agePct": 2
+   }
+  ]
+ },
+ {
+  "testIndex": 88,
+  "newsId": "politifact14947",
+  "headline": "Bill Clinton’s Hitman Confesses On His Deathbed (SOURCE: HANNITY)",
+  "label": "PolitiFact story #88",
+  "truth": "FAKE",
+  "n": 35,
+  "users": 34,
+  "k": 7,
+  "edgeCount": 34,
+  "maxDepth": 3,
+  "nodes": [
+   {
+    "id": 0,
+    "type": "news",
+    "x": 0.0,
+    "y": 0.0,
+    "depth": 0,
+    "order": 0,
+    "handle": "news",
+    "followersPct": 58,
+    "statusesPct": 58,
+    "agePct": 50
+   },
+   {
+    "id": 1,
+    "type": "user",
+    "x": 70.7,
+    "y": -33.3,
+    "depth": 1,
+    "order": 1,
+    "handle": "@user_6041",
+    "followersPct": 58,
+    "statusesPct": 58,
+    "agePct": 50
+   },
+   {
+    "id": 2,
+    "type": "user",
+    "x": -76.5,
+    "y": 54.2,
+    "depth": 1,
+    "order": 2,
+    "handle": "@user_4648",
+    "followersPct": 87,
+    "statusesPct": 76,
+    "agePct": 66
+   },
+   {
+    "id": 3,
+    "type": "user",
+    "x": -46.5,
+    "y": 139.3,
+    "depth": 1,
+    "order": 3,
+    "handle": "@user_6290",
+    "followersPct": 22,
+    "statusesPct": 65,
+    "agePct": 35
+   },
+   {
+    "id": 4,
+    "type": "user",
+    "x": 138.8,
+    "y": -12.8,
+    "depth": 1,
+    "order": 4,
+    "handle": "@user_8315",
+    "followersPct": 29,
+    "statusesPct": 23,
+    "agePct": 43
+   },
+   {
+    "id": 5,
+    "type": "user",
+    "x": 134.8,
+    "y": -240.5,
+    "depth": 1,
+    "order": 5,
+    "handle": "@user_3151",
+    "followersPct": 88,
+    "statusesPct": 81,
+    "agePct": 17
+   },
+   {
+    "id": 6,
+    "type": "user",
+    "x": -7.7,
+    "y": 142.7,
+    "depth": 1,
+    "order": 6,
+    "handle": "@user_8420",
+    "followersPct": 21,
+    "statusesPct": 71,
+    "agePct": 22
+   },
+   {
+    "id": 7,
+    "type": "user",
+    "x": -111.7,
+    "y": -81.4,
+    "depth": 1,
+    "order": 7,
+    "handle": "@user_4941",
+    "followersPct": 74,
+    "statusesPct": 32,
+    "agePct": 81
+   },
+   {
+    "id": 8,
+    "type": "user",
+    "x": -111.9,
+    "y": 88.5,
+    "depth": 1,
+    "order": 8,
+    "handle": "@user_4998",
+    "followersPct": 6,
+    "statusesPct": 64,
+    "agePct": 66
+   },
+   {
+    "id": 9,
+    "type": "user",
+    "x": 31.1,
+    "y": 145.0,
+    "depth": 1,
+    "order": 9,
+    "handle": "@user_4400",
+    "followersPct": 24,
+    "statusesPct": 10,
+    "agePct": 28
+   },
+   {
+    "id": 10,
+    "type": "user",
+    "x": 73.6,
+    "y": 130.7,
+    "depth": 1,
+    "order": 10,
+    "handle": "@user_5469",
+    "followersPct": 3,
+    "statusesPct": 31,
+    "agePct": 17
+   },
+   {
+    "id": 11,
+    "type": "user",
+    "x": 42.4,
+    "y": 99.5,
+    "depth": 1,
+    "order": 11,
+    "handle": "@user_7069",
+    "followersPct": 3,
+    "statusesPct": 31,
+    "agePct": 17
+   },
+   {
+    "id": 12,
+    "type": "user",
+    "x": -127.9,
+    "y": -1.3,
+    "depth": 1,
+    "order": 12,
+    "handle": "@user_2184",
+    "followersPct": 4,
+    "statusesPct": 22,
+    "agePct": 58
+   },
+   {
+    "id": 13,
+    "type": "user",
+    "x": -83.8,
+    "y": 119.3,
+    "depth": 1,
+    "order": 13,
+    "handle": "@user_2345",
+    "followersPct": 15,
+    "statusesPct": 56,
+    "agePct": 32
+   },
+   {
+    "id": 14,
+    "type": "user",
+    "x": -1.5,
+    "y": -78.4,
+    "depth": 1,
+    "order": 14,
+    "handle": "@user_9695",
+    "followersPct": 3,
+    "statusesPct": 31,
+    "agePct": 17
+   },
+   {
+    "id": 15,
+    "type": "user",
+    "x": -45.1,
+    "y": 92.6,
+    "depth": 1,
+    "order": 15,
+    "handle": "@user_1128",
+    "followersPct": 3,
+    "statusesPct": 31,
+    "agePct": 17
+   },
+   {
+    "id": 16,
+    "type": "user",
+    "x": -0.4,
+    "y": 80.2,
+    "depth": 1,
+    "order": 16,
+    "handle": "@user_4593",
+    "followersPct": 3,
+    "statusesPct": 31,
+    "agePct": 17
+   },
+   {
+    "id": 17,
+    "type": "user",
+    "x": -184.2,
+    "y": 24.4,
+    "depth": 1,
+    "order": 17,
+    "handle": "@user_8860",
+    "followersPct": 58,
+    "statusesPct": 58,
+    "agePct": 50
+   },
+   {
+    "id": 18,
+    "type": "user",
+    "x": 69.7,
+    "y": 55.6,
+    "depth": 1,
+    "order": 18,
+    "handle": "@user_4952",
+    "followersPct": 13,
+    "statusesPct": 11,
+    "agePct": 14
+   },
+   {
+    "id": 19,
+    "type": "user",
+    "x": 101.5,
+    "y": 101.3,
+    "depth": 1,
+    "order": 19,
+    "handle": "@user_7038",
+    "followersPct": 32,
+    "statusesPct": 42,
+    "agePct": 77
+   },
+   {
+    "id": 20,
+    "type": "user",
+    "x": -81.6,
+    "y": 0.8,
+    "depth": 1,
+    "order": 20,
+    "handle": "@user_2932",
+    "followersPct": 34,
+    "statusesPct": 91,
+    "agePct": 17
+   },
+   {
+    "id": 21,
+    "type": "user",
+    "x": 23.8,
+    "y": -125.4,
+    "depth": 1,
+    "order": 21,
+    "handle": "@user_6723",
+    "followersPct": 34,
+    "statusesPct": 91,
+    "agePct": 17
+   },
+   {
+    "id": 22,
+    "type": "user",
+    "x": 98.7,
+    "y": 16.0,
+    "depth": 1,
+    "order": 22,
+    "handle": "@user_5909",
+    "followersPct": 15,
+    "statusesPct": 16,
+    "agePct": 62
+   },
+   {
+    "id": 23,
+    "type": "user",
+    "x": -51.2,
+    "y": -96.1,
+    "depth": 1,
+    "order": 23,
+    "handle": "@user_9586",
+    "followersPct": 7,
+    "statusesPct": 29,
+    "agePct": 75
+   },
+   {
+    "id": 24,
+    "type": "user",
+    "x": -72.4,
+    "y": -50.6,
+    "depth": 1,
+    "order": 24,
+    "handle": "@user_3701",
+    "followersPct": 58,
+    "statusesPct": 58,
+    "agePct": 50
+   },
+   {
+    "id": 25,
+    "type": "user",
+    "x": 53.2,
+    "y": -93.2,
+    "depth": 1,
+    "order": 25,
+    "handle": "@user_4614",
+    "followersPct": 13,
+    "statusesPct": 28,
+    "agePct": 75
+   },
+   {
+    "id": 26,
+    "type": "user",
+    "x": 120.5,
+    "y": -50.8,
+    "depth": 1,
+    "order": 26,
+    "handle": "@user_5344",
+    "followersPct": 7,
+    "statusesPct": 6,
+    "agePct": 96
+   },
+   {
+    "id": 27,
+    "type": "user",
+    "x": 143.5,
+    "y": -394.6,
+    "depth": 2,
+    "order": 27,
+    "handle": "@user_1835",
+    "followersPct": 65,
+    "statusesPct": 64,
+    "agePct": 53
+   },
+   {
+    "id": 28,
+    "type": "user",
+    "x": 252.1,
+    "y": -340.3,
+    "depth": 2,
+    "order": 28,
+    "handle": "@user_4418",
+    "followersPct": 78,
+    "statusesPct": 88,
+    "agePct": 76
+   },
+   {
+    "id": 29,
+    "type": "user",
+    "x": 186.6,
+    "y": -325.9,
+    "depth": 2,
+    "order": 29,
+    "handle": "@user_2353",
+    "followersPct": 75,
+    "statusesPct": 55,
+    "agePct": 89
+   },
+   {
+    "id": 30,
+    "type": "user",
+    "x": 125.2,
+    "y": -336.3,
+    "depth": 2,
+    "order": 30,
+    "handle": "@user_4516",
+    "followersPct": 29,
+    "statusesPct": 20,
+    "agePct": 88
+   },
+   {
+    "id": 31,
+    "type": "user",
+    "x": 230.6,
+    "y": -274.3,
+    "depth": 2,
+    "order": 31,
+    "handle": "@user_1068",
+    "followersPct": 58,
+    "statusesPct": 58,
+    "agePct": 50
+   },
+   {
+    "id": 32,
+    "type": "user",
+    "x": 151.1,
+    "y": -500.0,
+    "depth": 3,
+    "order": 33,
+    "handle": "@user_8604",
+    "followersPct": 65,
+    "statusesPct": 76,
+    "agePct": 54
+   },
+   {
+    "id": 33,
+    "type": "user",
+    "x": 331.7,
+    "y": -410.8,
+    "depth": 3,
+    "order": 34,
+    "handle": "@user_9774",
+    "followersPct": 49,
+    "statusesPct": 64,
+    "agePct": 96
+   },
+   {
+    "id": 34,
+    "type": "user",
+    "x": -305.4,
+    "y": 40.7,
+    "depth": 2,
+    "order": 32,
+    "handle": "@user_4214",
+    "followersPct": 56,
+    "statusesPct": 58,
+    "agePct": 66
+   },
+   {
+    "id": 35,
+    "type": "bot",
+    "x": 141.7,
+    "y": 32.9,
+    "depth": 1,
+    "order": 0,
+    "handle": "@user_6157",
+    "followersPct": 99,
+    "statusesPct": 87,
+    "agePct": 2
+   },
+   {
+    "id": 36,
+    "type": "bot",
+    "x": 125.3,
+    "y": 70.8,
+    "depth": 1,
+    "order": 1,
+    "handle": "@user_6426",
+    "followersPct": 34,
+    "statusesPct": 40,
+    "agePct": 5
+   },
+   {
+    "id": 37,
+    "type": "bot",
+    "x": 94.2,
+    "y": -86.3,
+    "depth": 1,
+    "order": 2,
+    "handle": "@user_1469",
+    "followersPct": 99,
+    "statusesPct": 53,
+    "agePct": 20
+   },
+   {
+    "id": 38,
+    "type": "bot",
+    "x": -83.2,
+    "y": -117.9,
+    "depth": 1,
+    "order": 3,
+    "handle": "@user_5795",
+    "followersPct": 68,
+    "statusesPct": 48,
+    "agePct": 4
+   },
+   {
+    "id": 39,
+    "type": "bot",
+    "x": -24.0,
+    "y": -131.5,
+    "depth": 1,
+    "order": 4,
+    "handle": "@user_6956",
+    "followersPct": 95,
+    "statusesPct": 81,
+    "agePct": 5
+   },
+   {
+    "id": 40,
+    "type": "bot",
+    "x": -129.9,
+    "y": -43.7,
+    "depth": 1,
+    "order": 5,
+    "handle": "@user_1868",
+    "followersPct": 34,
+    "statusesPct": 40,
+    "agePct": 5
+   },
+   {
+    "id": 41,
+    "type": "bot",
+    "x": -124.9,
+    "y": 46.5,
+    "depth": 1,
+    "order": 6,
+    "handle": "@user_8608",
+    "followersPct": 34,
+    "statusesPct": 40,
+    "agePct": 5
+   }
+  ],
+  "edges": [
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    0,
+    3
+   ],
+   [
+    0,
+    4
+   ],
+   [
+    0,
+    5
+   ],
+   [
+    0,
+    6
+   ],
+   [
+    0,
+    7
+   ],
+   [
+    0,
+    8
+   ],
+   [
+    0,
+    9
+   ],
+   [
+    0,
+    10
+   ],
+   [
+    0,
+    11
+   ],
+   [
+    0,
+    12
+   ],
+   [
+    0,
+    13
+   ],
+   [
+    0,
+    14
+   ],
+   [
+    0,
+    15
+   ],
+   [
+    0,
+    16
+   ],
+   [
+    0,
+    17
+   ],
+   [
+    0,
+    18
+   ],
+   [
+    0,
+    19
+   ],
+   [
+    0,
+    20
+   ],
+   [
+    0,
+    21
+   ],
+   [
+    0,
+    22
+   ],
+   [
+    0,
+    23
+   ],
+   [
+    0,
+    24
+   ],
+   [
+    0,
+    25
+   ],
+   [
+    0,
+    26
+   ],
+   [
+    5,
+    27
+   ],
+   [
+    5,
+    28
+   ],
+   [
+    5,
+    29
+   ],
+   [
+    5,
+    30
+   ],
+   [
+    5,
+    31
+   ],
+   [
+    17,
+    34
+   ],
+   [
+    27,
+    32
+   ],
+   [
+    28,
+    33
+   ]
+  ],
+  "bots": [
+   35,
+   36,
+   37,
+   38,
+   39,
+   40,
+   41
+  ],
+  "p": [
+   0.561,
+   0.472,
+   0.472,
+   0.526
+  ],
+  "importance": [
+   [
+    0.0,
+    0.832,
+    0.895,
+    0.881,
+    0.974,
+    0.871,
+    0.906,
+    0.719,
+    0.844,
+    0.805,
+    0.962,
+    0.814,
+    0.818,
+    0.908,
+    1.0,
+    0.791,
+    0.868,
+    0.789,
+    0.845,
+    0.859,
+    0.847,
+    0.827,
+    0.88,
+    0.913,
+    0.814,
+    0.796,
+    0.942,
+    0.0,
+    0.866,
+    0.0,
+    0.771,
+    0.0,
+    0.0,
+    0.843,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.731,
+    0.791,
+    0.786,
+    0.849,
+    0.794,
+    0.787,
+    0.685,
+    0.827,
+    0.706,
+    0.837,
+    0.844,
+    0.795,
+    0.838,
+    0.853,
+    0.806,
+    0.748,
+    0.699,
+    0.838,
+    0.812,
+    0.815,
+    0.711,
+    0.753,
+    0.876,
+    0.821,
+    0.755,
+    0.821,
+    0.0,
+    0.757,
+    0.0,
+    0.803,
+    0.0,
+    0.0,
+    0.815,
+    0.0,
+    0.85,
+    0.856,
+    0.821,
+    0.769,
+    1.0,
+    0.879,
+    0.929
+   ],
+   [
+    0.0,
+    0.731,
+    0.791,
+    0.786,
+    0.849,
+    0.794,
+    0.787,
+    0.685,
+    0.827,
+    0.706,
+    0.837,
+    0.844,
+    0.795,
+    0.838,
+    0.853,
+    0.806,
+    0.748,
+    0.699,
+    0.838,
+    0.812,
+    0.815,
+    0.711,
+    0.753,
+    0.876,
+    0.821,
+    0.755,
+    0.821,
+    0.0,
+    0.757,
+    0.0,
+    0.803,
+    0.0,
+    0.0,
+    0.815,
+    0.0,
+    0.85,
+    0.856,
+    0.821,
+    0.769,
+    1.0,
+    0.879,
+    0.929
+   ],
+   [
+    0.0,
+    0.703,
+    0.881,
+    0.87,
+    0.945,
+    0.834,
+    0.885,
+    0.659,
+    0.884,
+    0.724,
+    0.916,
+    0.904,
+    0.762,
+    0.842,
+    0.975,
+    0.889,
+    0.831,
+    0.774,
+    0.935,
+    0.812,
+    0.798,
+    0.688,
+    0.774,
+    1.0,
+    0.809,
+    0.731,
+    0.927,
+    0.0,
+    0.794,
+    0.0,
+    0.86,
+    0.0,
+    0.0,
+    0.864,
+    0.0,
+    0.841,
+    0.821,
+    0.809,
+    0.757,
+    0.847,
+    0.82,
+    0.894
+   ]
+  ],
+  "filter": {
+   "checked": 41,
+   "flagged": 0,
+   "flaggedBots": 0
+  },
+  "advBots": [
+   {
+    "followersPct": 63,
+    "statusesPct": 29,
+    "agePct": 0
+   },
+   {
+    "followersPct": 34,
+    "statusesPct": 40,
+    "agePct": 5
+   },
+   {
+    "followersPct": 99,
+    "statusesPct": 53,
+    "agePct": 20
+   },
+   {
+    "followersPct": 68,
+    "statusesPct": 48,
+    "agePct": 4
+   },
+   {
+    "followersPct": 95,
+    "statusesPct": 81,
+    "agePct": 5
+   },
+   {
+    "followersPct": 34,
+    "statusesPct": 40,
+    "agePct": 5
+   },
+   {
+    "followersPct": 34,
+    "statusesPct": 40,
+    "agePct": 5
+   }
+  ]
+ },
+ {
+  "testIndex": 148,
+  "newsId": "politifact14517",
+  "headline": "UPDATE: Florida Governor Rick Scott Now Listed As ‘Critical’ After Bizarre Hurricane Cleanup Accident",
+  "label": "PolitiFact story #148",
+  "truth": "FAKE",
+  "n": 61,
+  "users": 60,
+  "k": 12,
+  "edgeCount": 60,
+  "maxDepth": 3,
+  "nodes": [
+   {
+    "id": 0,
+    "type": "news",
+    "x": 0.0,
+    "y": 0.0,
+    "depth": 0,
+    "order": 0,
+    "handle": "news",
+    "followersPct": 64,
+    "statusesPct": 58,
+    "agePct": 57
+   },
+   {
+    "id": 1,
+    "type": "user",
+    "x": 91.8,
+    "y": 101.9,
+    "depth": 1,
+    "order": 1,
+    "handle": "@user_1954",
+    "followersPct": 45,
+    "statusesPct": 7,
+    "agePct": 25
+   },
+   {
+    "id": 2,
+    "type": "user",
+    "x": -49.0,
+    "y": 142.0,
+    "depth": 1,
+    "order": 2,
+    "handle": "@user_7431",
+    "followersPct": 13,
+    "statusesPct": 7,
+    "agePct": 14
+   },
+   {
+    "id": 3,
+    "type": "user",
+    "x": -184.3,
+    "y": 112.5,
+    "depth": 1,
+    "order": 3,
+    "handle": "@user_2733",
+    "followersPct": 23,
+    "statusesPct": 9,
+    "agePct": 65
+   },
+   {
+    "id": 4,
+    "type": "user",
+    "x": 45.9,
+    "y": -58.7,
+    "depth": 1,
+    "order": 4,
+    "handle": "@user_7118",
+    "followersPct": 63,
+    "statusesPct": 97,
+    "agePct": 80
+   },
+   {
+    "id": 5,
+    "type": "user",
+    "x": 212.1,
+    "y": -129.3,
+    "depth": 1,
+    "order": 5,
+    "handle": "@user_8177",
+    "followersPct": 5,
+    "statusesPct": 36,
+    "agePct": 67
+   },
+   {
+    "id": 6,
+    "type": "user",
+    "x": 70.2,
+    "y": 162.0,
+    "depth": 1,
+    "order": 6,
+    "handle": "@user_8774",
+    "followersPct": 6,
+    "statusesPct": 24,
+    "agePct": 14
+   },
+   {
+    "id": 7,
+    "type": "user",
+    "x": -112.4,
+    "y": -30.7,
+    "depth": 1,
+    "order": 7,
+    "handle": "@user_4875",
+    "followersPct": 12,
+    "statusesPct": 52,
+    "agePct": 78
+   },
+   {
+    "id": 8,
+    "type": "user",
+    "x": -102.3,
+    "y": 198.5,
+    "depth": 1,
+    "order": 8,
+    "handle": "@user_1519",
+    "followersPct": 3,
+    "statusesPct": 24,
+    "agePct": 71
+   },
+   {
+    "id": 9,
+    "type": "user",
+    "x": 100.1,
+    "y": 145.7,
+    "depth": 1,
+    "order": 9,
+    "handle": "@user_8795",
+    "followersPct": 64,
+    "statusesPct": 97,
+    "agePct": 55
+   },
+   {
+    "id": 10,
+    "type": "user",
+    "x": 48.6,
+    "y": 114.9,
+    "depth": 1,
+    "order": 10,
+    "handle": "@user_4060",
+    "followersPct": 8,
+    "statusesPct": 34,
+    "agePct": 66
+   },
+   {
+    "id": 11,
+    "type": "user",
+    "x": -1.1,
+    "y": 79.2,
+    "depth": 1,
+    "order": 11,
+    "handle": "@user_5647",
+    "followersPct": 12,
+    "statusesPct": 10,
+    "agePct": 20
+   },
+   {
+    "id": 12,
+    "type": "user",
+    "x": -205.4,
+    "y": 16.6,
+    "depth": 1,
+    "order": 12,
+    "handle": "@user_5357",
+    "followersPct": 29,
+    "statusesPct": 20,
+    "agePct": 17
+   },
+   {
+    "id": 13,
+    "type": "user",
+    "x": -27.9,
+    "y": 170.8,
+    "depth": 1,
+    "order": 13,
+    "handle": "@user_5753",
+    "followersPct": 78,
+    "statusesPct": 21,
+    "agePct": 59
+   },
+   {
+    "id": 14,
+    "type": "user",
+    "x": -102.3,
+    "y": -103.0,
+    "depth": 1,
+    "order": 14,
+    "handle": "@user_1706",
+    "followersPct": 8,
+    "statusesPct": 4,
+    "agePct": 74
+   },
+   {
+    "id": 15,
+    "type": "user",
+    "x": -87.2,
+    "y": 134.6,
+    "depth": 1,
+    "order": 15,
+    "handle": "@user_9875",
+    "followersPct": 14,
+    "statusesPct": 3,
+    "agePct": 64
+   },
+   {
+    "id": 16,
+    "type": "user",
+    "x": -67.3,
+    "y": 23.7,
+    "depth": 1,
+    "order": 16,
+    "handle": "@user_6158",
+    "followersPct": 47,
+    "statusesPct": 33,
+    "agePct": 28
+   },
+   {
+    "id": 17,
+    "type": "user",
+    "x": -141.0,
+    "y": 56.1,
+    "depth": 1,
+    "order": 17,
+    "handle": "@user_2097",
+    "followersPct": 8,
+    "statusesPct": 30,
+    "agePct": 45
+   },
+   {
+    "id": 18,
+    "type": "user",
+    "x": 144.0,
+    "y": 90.0,
+    "depth": 1,
+    "order": 18,
+    "handle": "@user_2226",
+    "followersPct": 90,
+    "statusesPct": 67,
+    "agePct": 80
+   },
+   {
+    "id": 19,
+    "type": "user",
+    "x": 165.6,
+    "y": 63.0,
+    "depth": 1,
+    "order": 19,
+    "handle": "@user_6641",
+    "followersPct": 28,
+    "statusesPct": 11,
+    "agePct": 48
+   },
+   {
+    "id": 20,
+    "type": "user",
+    "x": -53.7,
+    "y": 96.1,
+    "depth": 1,
+    "order": 20,
+    "handle": "@user_4323",
+    "followersPct": 7,
+    "statusesPct": 7,
+    "agePct": 96
+   },
+   {
+    "id": 21,
+    "type": "user",
+    "x": 1.8,
+    "y": -144.6,
+    "depth": 1,
+    "order": 21,
+    "handle": "@user_9550",
+    "followersPct": 81,
+    "statusesPct": 42,
+    "agePct": 96
+   },
+   {
+    "id": 22,
+    "type": "user",
+    "x": 130.5,
+    "y": 123.4,
+    "depth": 1,
+    "order": 22,
+    "handle": "@user_2353",
+    "followersPct": 44,
+    "statusesPct": 10,
+    "agePct": 41
+   },
+   {
+    "id": 23,
+    "type": "user",
+    "x": 91.8,
+    "y": -184.6,
+    "depth": 1,
+    "order": 23,
+    "handle": "@user_4078",
+    "followersPct": 23,
+    "statusesPct": 4,
+    "agePct": 56
+   },
+   {
+    "id": 24,
+    "type": "user",
+    "x": -276.6,
+    "y": -346.9,
+    "depth": 1,
+    "order": 24,
+    "handle": "@user_6774",
+    "followersPct": 76,
+    "statusesPct": 23,
+    "agePct": 83
+   },
+   {
+    "id": 25,
+    "type": "user",
+    "x": 58.1,
+    "y": 59.7,
+    "depth": 1,
+    "order": 25,
+    "handle": "@user_7102",
+    "followersPct": 5,
+    "statusesPct": 39,
+    "agePct": 44
+   },
+   {
+    "id": 26,
+    "type": "user",
+    "x": 168.8,
+    "y": -20.8,
+    "depth": 1,
+    "order": 26,
+    "handle": "@user_6163",
+    "followersPct": 34,
+    "statusesPct": 20,
+    "agePct": 59
+   },
+   {
+    "id": 27,
+    "type": "user",
+    "x": -147.8,
+    "y": -7.4,
+    "depth": 1,
+    "order": 27,
+    "handle": "@user_1969",
+    "followersPct": 64,
+    "statusesPct": 58,
+    "agePct": 57
+   },
+   {
+    "id": 28,
+    "type": "user",
+    "x": 48.2,
+    "y": -140.7,
+    "depth": 1,
+    "order": 28,
+    "handle": "@user_8067",
+    "followersPct": 35,
+    "statusesPct": 35,
+    "agePct": 59
+   },
+   {
+    "id": 29,
+    "type": "user",
+    "x": -62.7,
+    "y": -104.5,
+    "depth": 1,
+    "order": 29,
+    "handle": "@user_7852",
+    "followersPct": 4,
+    "statusesPct": 23,
+    "agePct": 54
+   },
+   {
+    "id": 30,
+    "type": "user",
+    "x": -130.8,
+    "y": -66.4,
+    "depth": 1,
+    "order": 30,
+    "handle": "@user_8602",
+    "followersPct": 23,
+    "statusesPct": 41,
+    "agePct": 55
+   },
+   {
+    "id": 31,
+    "type": "user",
+    "x": -14.6,
+    "y": -93.3,
+    "depth": 1,
+    "order": 31,
+    "handle": "@user_1128",
+    "followersPct": 16,
+    "statusesPct": 26,
+    "agePct": 91
+   },
+   {
+    "id": 32,
+    "type": "user",
+    "x": -94.7,
+    "y": 72.6,
+    "depth": 1,
+    "order": 32,
+    "handle": "@user_3757",
+    "followersPct": 64,
+    "statusesPct": 58,
+    "agePct": 57
+   },
+   {
+    "id": 33,
+    "type": "user",
+    "x": 125.0,
+    "y": -90.8,
+    "depth": 1,
+    "order": 33,
+    "handle": "@user_3789",
+    "followersPct": 64,
+    "statusesPct": 58,
+    "agePct": 57
+   },
+   {
+    "id": 34,
+    "type": "user",
+    "x": 146.0,
+    "y": -56.2,
+    "depth": 1,
+    "order": 34,
+    "handle": "@user_2613",
+    "followersPct": 21,
+    "statusesPct": 38,
+    "agePct": 50
+   },
+   {
+    "id": 35,
+    "type": "user",
+    "x": 128.1,
+    "y": -15.8,
+    "depth": 1,
+    "order": 35,
+    "handle": "@user_9087",
+    "followersPct": 30,
+    "statusesPct": 43,
+    "agePct": 62
+   },
+   {
+    "id": 36,
+    "type": "user",
+    "x": 83.9,
+    "y": 0.1,
+    "depth": 1,
+    "order": 36,
+    "handle": "@user_7750",
+    "followersPct": 28,
+    "statusesPct": 31,
+    "agePct": 14
+   },
+   {
+    "id": 37,
+    "type": "user",
+    "x": 93.1,
+    "y": -116.5,
+    "depth": 1,
+    "order": 37,
+    "handle": "@user_8267",
+    "followersPct": 67,
+    "statusesPct": 27,
+    "agePct": 45
+   },
+   {
+    "id": 38,
+    "type": "user",
+    "x": -304.3,
+    "y": 189.4,
+    "depth": 2,
+    "order": 38,
+    "handle": "@user_6878",
+    "followersPct": 64,
+    "statusesPct": 58,
+    "agePct": 57
+   },
+   {
+    "id": 39,
+    "type": "user",
+    "x": 340.3,
+    "y": -183.1,
+    "depth": 2,
+    "order": 39,
+    "handle": "@user_9143",
+    "followersPct": 44,
+    "statusesPct": 46,
+    "agePct": 30
+   },
+   {
+    "id": 40,
+    "type": "user",
+    "x": 311.8,
+    "y": -226.1,
+    "depth": 2,
+    "order": 40,
+    "handle": "@user_7662",
+    "followersPct": 16,
+    "statusesPct": 8,
+    "agePct": 29
+   },
+   {
+    "id": 41,
+    "type": "user",
+    "x": -167.6,
+    "y": 327.5,
+    "depth": 2,
+    "order": 41,
+    "handle": "@user_8598",
+    "followersPct": 94,
+    "statusesPct": 93,
+    "agePct": 59
+   },
+   {
+    "id": 42,
+    "type": "user",
+    "x": -341.0,
+    "y": 32.5,
+    "depth": 2,
+    "order": 42,
+    "handle": "@user_8731",
+    "followersPct": 44,
+    "statusesPct": 46,
+    "agePct": 30
+   },
+   {
+    "id": 43,
+    "type": "user",
+    "x": 157.3,
+    "y": -305.1,
+    "depth": 2,
+    "order": 43,
+    "handle": "@user_9641",
+    "followersPct": 82,
+    "statusesPct": 81,
+    "agePct": 18
+   },
+   {
+    "id": 44,
+    "type": "user",
+    "x": -177.1,
+    "y": -442.5,
+    "depth": 2,
+    "order": 44,
+    "handle": "@user_5607",
+    "followersPct": 82,
+    "statusesPct": 40,
+    "agePct": 0
+   },
+   {
+    "id": 45,
+    "type": "user",
+    "x": -425.5,
+    "y": -374.9,
+    "depth": 2,
+    "order": 45,
+    "handle": "@user_4827",
+    "followersPct": 64,
+    "statusesPct": 58,
+    "agePct": 57
+   },
+   {
+    "id": 46,
+    "type": "user",
+    "x": -391.5,
+    "y": -392.5,
+    "depth": 2,
+    "order": 46,
+    "handle": "@user_1271",
+    "followersPct": 20,
+    "statusesPct": 22,
+    "agePct": 71
+   },
+   {
+    "id": 47,
+    "type": "user",
+    "x": -346.9,
+    "y": -386.4,
+    "depth": 2,
+    "order": 47,
+    "handle": "@user_9103",
+    "followersPct": 70,
+    "statusesPct": 38,
+    "agePct": 76
+   },
+   {
+    "id": 48,
+    "type": "user",
+    "x": -381.4,
+    "y": -461.7,
+    "depth": 2,
+    "order": 48,
+    "handle": "@user_8315",
+    "followersPct": 64,
+    "statusesPct": 58,
+    "agePct": 57
+   },
+   {
+    "id": 49,
+    "type": "user",
+    "x": -344.4,
+    "y": -486.2,
+    "depth": 2,
+    "order": 49,
+    "handle": "@user_1046",
+    "followersPct": 73,
+    "statusesPct": 76,
+    "agePct": 88
+   },
+   {
+    "id": 50,
+    "type": "user",
+    "x": -347.6,
+    "y": -436.0,
+    "depth": 2,
+    "order": 50,
+    "handle": "@user_3501",
+    "followersPct": 34,
+    "statusesPct": 93,
+    "agePct": 85
+   },
+   {
+    "id": 51,
+    "type": "user",
+    "x": -363.1,
+    "y": -330.4,
+    "depth": 2,
+    "order": 51,
+    "handle": "@user_2238",
+    "followersPct": 64,
+    "statusesPct": 58,
+    "agePct": 57
+   },
+   {
+    "id": 52,
+    "type": "user",
+    "x": -408.4,
+    "y": -428.9,
+    "depth": 2,
+    "order": 52,
+    "handle": "@user_4264",
+    "followersPct": 64,
+    "statusesPct": 58,
+    "agePct": 57
+   },
+   {
+    "id": 53,
+    "type": "user",
+    "x": -306.0,
+    "y": -455.0,
+    "depth": 2,
+    "order": 53,
+    "handle": "@user_8120",
+    "followersPct": 15,
+    "statusesPct": 25,
+    "agePct": 76
+   },
+   {
+    "id": 54,
+    "type": "user",
+    "x": -414.7,
+    "y": -334.3,
+    "depth": 2,
+    "order": 54,
+    "handle": "@user_4181",
+    "followersPct": 64,
+    "statusesPct": 58,
+    "agePct": 57
+   },
+   {
+    "id": 55,
+    "type": "user",
+    "x": -386.3,
+    "y": -293.7,
+    "depth": 2,
+    "order": 55,
+    "handle": "@user_2784",
+    "followersPct": 68,
+    "statusesPct": 56,
+    "agePct": 14
+   },
+   {
+    "id": 56,
+    "type": "user",
+    "x": -299.0,
+    "y": -500.0,
+    "depth": 2,
+    "order": 56,
+    "handle": "@user_3034",
+    "followersPct": 59,
+    "statusesPct": 57,
+    "agePct": 24
+   },
+   {
+    "id": 57,
+    "type": "user",
+    "x": -262.9,
+    "y": -480.7,
+    "depth": 2,
+    "order": 57,
+    "handle": "@user_4549",
+    "followersPct": 65,
+    "statusesPct": 44,
+    "agePct": 87
+   },
+   {
+    "id": 58,
+    "type": "user",
+    "x": -228.1,
+    "y": -467.6,
+    "depth": 2,
+    "order": 58,
+    "handle": "@user_4757",
+    "followersPct": 64,
+    "statusesPct": 58,
+    "agePct": 57
+   },
+   {
+    "id": 59,
+    "type": "user",
+    "x": -257.0,
+    "y": -424.6,
+    "depth": 2,
+    "order": 59,
+    "handle": "@user_9708",
+    "followersPct": 43,
+    "statusesPct": 32,
+    "agePct": 96
+   },
+   {
+    "id": 60,
+    "type": "user",
+    "x": -94.4,
+    "y": -471.0,
+    "depth": 3,
+    "order": 60,
+    "handle": "@user_1785",
+    "followersPct": 64,
+    "statusesPct": 97,
+    "agePct": 55
+   },
+   {
+    "id": 61,
+    "type": "bot",
+    "x": 172.3,
+    "y": 20.8,
+    "depth": 1,
+    "order": 0,
+    "handle": "@user_7520",
+    "followersPct": 16,
+    "statusesPct": 11,
+    "agePct": 1
+   },
+   {
+    "id": 62,
+    "type": "bot",
+    "x": -119.1,
+    "y": 105.7,
+    "depth": 1,
+    "order": 1,
+    "handle": "@user_4696",
+    "followersPct": 97,
+    "statusesPct": 13,
+    "agePct": 22
+   },
+   {
+    "id": 63,
+    "type": "bot",
+    "x": -67.9,
+    "y": -53.6,
+    "depth": 1,
+    "order": 2,
+    "handle": "@user_9178",
+    "followersPct": 34,
+    "statusesPct": 40,
+    "agePct": 5
+   },
+   {
+    "id": 64,
+    "type": "bot",
+    "x": -41.7,
+    "y": -139.8,
+    "depth": 1,
+    "order": 3,
+    "handle": "@user_9364",
+    "followersPct": 70,
+    "statusesPct": 69,
+    "agePct": 0
+   },
+   {
+    "id": 65,
+    "type": "bot",
+    "x": 135.8,
+    "y": 29.7,
+    "depth": 1,
+    "order": 4,
+    "handle": "@user_7505",
+    "followersPct": 67,
+    "statusesPct": 44,
+    "agePct": 41
+   },
+   {
+    "id": 66,
+    "type": "bot",
+    "x": -115.6,
+    "y": 22.7,
+    "depth": 1,
+    "order": 5,
+    "handle": "@user_4112",
+    "followersPct": 86,
+    "statusesPct": 49,
+    "agePct": 18
+   },
+   {
+    "id": 67,
+    "type": "bot",
+    "x": -1.9,
+    "y": 127.9,
+    "depth": 1,
+    "order": 6,
+    "handle": "@user_5682",
+    "followersPct": 19,
+    "statusesPct": 17,
+    "agePct": 4
+   },
+   {
+    "id": 68,
+    "type": "bot",
+    "x": 35.9,
+    "y": 156.7,
+    "depth": 1,
+    "order": 7,
+    "handle": "@user_9950",
+    "followersPct": 99,
+    "statusesPct": 98,
+    "agePct": 2
+   },
+   {
+    "id": 69,
+    "type": "bot",
+    "x": 37.4,
+    "y": -103.8,
+    "depth": 1,
+    "order": 8,
+    "handle": "@user_8805",
+    "followersPct": 16,
+    "statusesPct": 11,
+    "agePct": 1
+   },
+   {
+    "id": 70,
+    "type": "bot",
+    "x": 93.5,
+    "y": -61.3,
+    "depth": 1,
+    "order": 9,
+    "handle": "@user_9528",
+    "followersPct": 33,
+    "statusesPct": 49,
+    "agePct": 48
+   },
+   {
+    "id": 71,
+    "type": "bot",
+    "x": 11.5,
+    "y": 178.6,
+    "depth": 1,
+    "order": 10,
+    "handle": "@user_4714",
+    "followersPct": 93,
+    "statusesPct": 48,
+    "agePct": 18
+   },
+   {
+    "id": 72,
+    "type": "bot",
+    "x": 108.0,
+    "y": 58.9,
+    "depth": 1,
+    "order": 11,
+    "handle": "@user_6281",
+    "followersPct": 13,
+    "statusesPct": 55,
+    "agePct": 53
+   }
+  ],
+  "edges": [
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    0,
+    3
+   ],
+   [
+    0,
+    4
+   ],
+   [
+    0,
+    5
+   ],
+   [
+    0,
+    6
+   ],
+   [
+    0,
+    7
+   ],
+   [
+    0,
+    8
+   ],
+   [
+    0,
+    9
+   ],
+   [
+    0,
+    10
+   ],
+   [
+    0,
+    11
+   ],
+   [
+    0,
+    12
+   ],
+   [
+    0,
+    13
+   ],
+   [
+    0,
+    14
+   ],
+   [
+    0,
+    15
+   ],
+   [
+    0,
+    16
+   ],
+   [
+    0,
+    17
+   ],
+   [
+    0,
+    18
+   ],
+   [
+    0,
+    19
+   ],
+   [
+    0,
+    20
+   ],
+   [
+    0,
+    21
+   ],
+   [
+    0,
+    22
+   ],
+   [
+    0,
+    23
+   ],
+   [
+    0,
+    24
+   ],
+   [
+    0,
+    25
+   ],
+   [
+    0,
+    26
+   ],
+   [
+    0,
+    27
+   ],
+   [
+    0,
+    28
+   ],
+   [
+    0,
+    29
+   ],
+   [
+    0,
+    30
+   ],
+   [
+    0,
+    31
+   ],
+   [
+    0,
+    32
+   ],
+   [
+    0,
+    33
+   ],
+   [
+    0,
+    34
+   ],
+   [
+    0,
+    35
+   ],
+   [
+    0,
+    36
+   ],
+   [
+    0,
+    37
+   ],
+   [
+    3,
+    38
+   ],
+   [
+    5,
+    39
+   ],
+   [
+    5,
+    40
+   ],
+   [
+    8,
+    41
+   ],
+   [
+    12,
+    42
+   ],
+   [
+    23,
+    43
+   ],
+   [
+    24,
+    44
+   ],
+   [
+    24,
+    45
+   ],
+   [
+    24,
+    46
+   ],
+   [
+    24,
+    47
+   ],
+   [
+    24,
+    48
+   ],
+   [
+    24,
+    49
+   ],
+   [
+    24,
+    50
+   ],
+   [
+    24,
+    51
+   ],
+   [
+    24,
+    52
+   ],
+   [
+    24,
+    53
+   ],
+   [
+    24,
+    54
+   ],
+   [
+    24,
+    55
+   ],
+   [
+    24,
+    56
+   ],
+   [
+    24,
+    57
+   ],
+   [
+    24,
+    58
+   ],
+   [
+    24,
+    59
+   ],
+   [
+    44,
+    60
+   ]
+  ],
+  "bots": [
+   61,
+   62,
+   63,
+   64,
+   65,
+   66,
+   67,
+   68,
+   69,
+   70,
+   71,
+   72
+  ],
+  "p": [
+   0.561,
+   0.45,
+   0.45,
+   0.523
+  ],
+  "importance": [
+   [
+    0.0,
+    0.714,
+    0.766,
+    0.843,
+    0.784,
+    0.797,
+    0.858,
+    0.655,
+    0.784,
+    0.833,
+    0.767,
+    0.809,
+    0.798,
+    0.958,
+    0.826,
+    0.765,
+    0.705,
+    0.677,
+    0.784,
+    0.817,
+    0.747,
+    0.681,
+    0.746,
+    0.962,
+    0.84,
+    0.845,
+    0.744,
+    0.772,
+    0.838,
+    1.0,
+    0.826,
+    0.875,
+    0.74,
+    0.765,
+    0.872,
+    0.762,
+    0.813,
+    0.793,
+    0.0,
+    0.0,
+    0.724,
+    0.0,
+    0.0,
+    0.0,
+    0.82,
+    0.879,
+    0.825,
+    0.768,
+    0.769,
+    0.846,
+    0.891,
+    0.865,
+    0.725,
+    0.779,
+    0.821,
+    0.859,
+    0.717,
+    0.772,
+    0.774,
+    0.773,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.749,
+    0.788,
+    0.747,
+    0.871,
+    0.836,
+    0.777,
+    0.713,
+    0.793,
+    0.747,
+    0.833,
+    0.809,
+    0.792,
+    0.878,
+    0.864,
+    0.793,
+    0.738,
+    0.729,
+    0.857,
+    0.846,
+    0.871,
+    0.744,
+    0.796,
+    0.9,
+    0.811,
+    0.762,
+    0.807,
+    0.82,
+    0.878,
+    0.905,
+    0.856,
+    0.782,
+    0.779,
+    0.809,
+    0.805,
+    0.832,
+    0.814,
+    0.8,
+    0.0,
+    0.0,
+    0.771,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.753,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.917,
+    0.827,
+    0.963,
+    0.932,
+    0.839,
+    0.827,
+    1.0,
+    0.924,
+    0.915,
+    0.933,
+    0.926,
+    0.716
+   ],
+   [
+    0.0,
+    0.749,
+    0.788,
+    0.747,
+    0.871,
+    0.836,
+    0.777,
+    0.713,
+    0.793,
+    0.747,
+    0.833,
+    0.809,
+    0.792,
+    0.878,
+    0.864,
+    0.793,
+    0.738,
+    0.729,
+    0.857,
+    0.846,
+    0.871,
+    0.744,
+    0.796,
+    0.9,
+    0.811,
+    0.762,
+    0.807,
+    0.82,
+    0.878,
+    0.905,
+    0.856,
+    0.782,
+    0.779,
+    0.809,
+    0.805,
+    0.832,
+    0.814,
+    0.8,
+    0.0,
+    0.0,
+    0.771,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.753,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.917,
+    0.827,
+    0.963,
+    0.932,
+    0.839,
+    0.827,
+    1.0,
+    0.924,
+    0.915,
+    0.933,
+    0.926,
+    0.716
+   ],
+   [
+    0.0,
+    0.819,
+    0.743,
+    0.735,
+    0.958,
+    0.788,
+    0.754,
+    0.787,
+    0.763,
+    0.826,
+    0.75,
+    0.778,
+    0.849,
+    0.952,
+    0.796,
+    0.854,
+    0.685,
+    0.805,
+    0.901,
+    0.916,
+    0.975,
+    0.817,
+    0.877,
+    0.846,
+    0.825,
+    0.743,
+    0.726,
+    0.906,
+    0.82,
+    1.0,
+    0.921,
+    0.67,
+    0.857,
+    0.746,
+    0.872,
+    0.925,
+    0.791,
+    0.767,
+    0.0,
+    0.0,
+    0.786,
+    0.0,
+    0.0,
+    0.0,
+    0.816,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.851,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.902,
+    0.0,
+    0.0,
+    0.735,
+    0.834,
+    0.789,
+    0.816,
+    0.835,
+    0.789,
+    0.749,
+    0.852,
+    0.817,
+    0.776,
+    0.868,
+    0.848,
+    0.799
+   ]
+  ],
+  "filter": {
+   "checked": 72,
+   "flagged": 0,
+   "flaggedBots": 0
+  },
+  "advBots": [
+   {
+    "followersPct": 84,
+    "statusesPct": 63,
+    "agePct": 60
+   },
+   {
+    "followersPct": 97,
+    "statusesPct": 13,
+    "agePct": 22
+   },
+   {
+    "followersPct": 34,
+    "statusesPct": 40,
+    "agePct": 5
+   },
+   {
+    "followersPct": 70,
+    "statusesPct": 69,
+    "agePct": 0
+   },
+   {
+    "followersPct": 49,
+    "statusesPct": 19,
+    "agePct": 31
+   },
+   {
+    "followersPct": 86,
+    "statusesPct": 49,
+    "agePct": 18
+   },
+   {
+    "followersPct": 19,
+    "statusesPct": 17,
+    "agePct": 4
+   },
+   {
+    "followersPct": 99,
+    "statusesPct": 98,
+    "agePct": 2
+   },
+   {
+    "followersPct": 43,
+    "statusesPct": 12,
+    "agePct": 3
+   },
+   {
+    "followersPct": 17,
+    "statusesPct": 65,
+    "agePct": 27
+   },
+   {
+    "followersPct": 93,
+    "statusesPct": 48,
+    "agePct": 18
+   },
+   {
+    "followersPct": 13,
+    "statusesPct": 55,
+    "agePct": 53
+   }
+  ]
+ }
+]

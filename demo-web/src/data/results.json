@@ -1,0 +1,234 @@
+{
+ "datasets": {
+  "politifact": {
+   "graphs": 314,
+   "train": 62,
+   "val": 31,
+   "test": 221,
+   "nodes": 41054
+  },
+  "gossipcop": {
+   "graphs": 5464,
+   "train": 1092,
+   "val": 546,
+   "test": 3826,
+   "nodes": 314262
+  }
+ },
+ "baseline": {
+  "politifact": [
+   {
+    "model": "GCN",
+    "acc": 0.846,
+    "accStd": 0.005,
+    "precision": 0.848,
+    "recall": 0.845,
+    "f1": 0.846,
+    "f1Std": 0.004
+   },
+   {
+    "model": "GAT",
+    "acc": 0.86,
+    "accStd": 0.02,
+    "precision": 0.862,
+    "recall": 0.859,
+    "f1": 0.859,
+    "f1Std": 0.02
+   },
+   {
+    "model": "SAGE",
+    "acc": 0.843,
+    "accStd": 0.011,
+    "precision": 0.852,
+    "recall": 0.841,
+    "f1": 0.842,
+    "f1Std": 0.012
+   }
+  ],
+  "gossipcop": [
+   {
+    "model": "GCN",
+    "acc": 0.956,
+    "accStd": 0.001,
+    "precision": 0.956,
+    "recall": 0.956,
+    "f1": 0.956,
+    "f1Std": 0.001
+   },
+   {
+    "model": "GAT",
+    "acc": 0.974,
+    "accStd": 0.002,
+    "precision": 0.974,
+    "recall": 0.974,
+    "f1": 0.974,
+    "f1Std": 0.002
+   },
+   {
+    "model": "SAGE",
+    "acc": 0.975,
+    "accStd": 0.001,
+    "precision": 0.975,
+    "recall": 0.975,
+    "f1": 0.975,
+    "f1Std": 0.001
+   }
+  ]
+ },
+ "attackCurve": [
+  {
+   "p": 0,
+   "GCN_naive": 0.846,
+   "GCN_camo": 0.846,
+   "GCN_greedy": 0.842,
+   "GAT_naive": 0.86,
+   "GAT_camo": 0.86,
+   "GAT_greedy": 0.846,
+   "SAGE_naive": 0.843,
+   "SAGE_camo": 0.843,
+   "SAGE_greedy": 0.842
+  },
+  {
+   "p": 5,
+   "GCN_naive": 0.848,
+   "GCN_camo": 0.842,
+   "GCN_greedy": 0.814,
+   "GCN_greedy_asr": 0.062,
+   "GAT_naive": 0.86,
+   "GAT_camo": 0.855,
+   "GAT_greedy": 0.81,
+   "GAT_greedy_asr": 0.079,
+   "SAGE_naive": 0.843,
+   "SAGE_camo": 0.843,
+   "SAGE_greedy": 0.824,
+   "SAGE_greedy_asr": 0.038
+  },
+  {
+   "p": 10,
+   "GCN_naive": 0.851,
+   "GCN_camo": 0.84,
+   "GCN_greedy": 0.769,
+   "GCN_greedy_asr": 0.165,
+   "GAT_naive": 0.86,
+   "GAT_camo": 0.855,
+   "GAT_greedy": 0.796,
+   "GAT_greedy_asr": 0.109,
+   "SAGE_naive": 0.845,
+   "SAGE_camo": 0.843,
+   "SAGE_greedy": 0.81,
+   "SAGE_greedy_asr": 0.067
+  },
+  {
+   "p": 20,
+   "GCN_naive": 0.857,
+   "GCN_camo": 0.825,
+   "GCN_greedy": 0.62,
+   "GCN_greedy_asr": 0.505,
+   "GAT_naive": 0.86,
+   "GAT_camo": 0.852,
+   "GAT_greedy": 0.769,
+   "GAT_greedy_asr": 0.168,
+   "SAGE_naive": 0.843,
+   "SAGE_camo": 0.842,
+   "SAGE_greedy": 0.778,
+   "SAGE_greedy_asr": 0.133
+  }
+ ],
+ "defense20": {
+  "GCN": {
+   "clean": 0.842,
+   "attack": 0.62,
+   "filter": 0.62,
+   "adv": 0.706,
+   "advFilter": 0.701,
+   "advTransfer": 0.71,
+   "advFilterTransfer": 0.71,
+   "advClean": 0.769,
+   "asrAttack": 0.505,
+   "asrAdv": 0.135,
+   "asrAdvTransfer": 0.125
+  },
+  "GAT": {
+   "clean": 0.846,
+   "attack": 0.769,
+   "filter": 0.769,
+   "adv": 0.796,
+   "advFilter": 0.796,
+   "advTransfer": 0.796,
+   "advFilterTransfer": 0.796,
+   "advClean": 0.855,
+   "asrAttack": 0.168,
+   "asrAdv": 0.129,
+   "asrAdvTransfer": 0.129
+  },
+  "SAGE": {
+   "clean": 0.842,
+   "attack": 0.778,
+   "filter": 0.778,
+   "adv": 0.792,
+   "advFilter": 0.787,
+   "advTransfer": 0.792,
+   "advFilterTransfer": 0.792,
+   "advClean": 0.837,
+   "asrAttack": 0.133,
+   "asrAdv": 0.095,
+   "asrAdvTransfer": 0.095
+  }
+ },
+ "advClean3": {
+  "GCN": {
+   "mean": 0.804,
+   "std": 0.031
+  },
+  "GAT": {
+   "mean": 0.854,
+   "std": 0.011
+  },
+  "SAGE": {
+   "mean": 0.848,
+   "std": 0.011
+  }
+ },
+ "filter": {
+  "falseRemovalTest": 0.004,
+  "falseRemovalTrain": 0.005,
+  "naiveRemoved20": 1.0,
+  "camoRemoved20": 0.005,
+  "greedyRemoved20": 0.002
+ },
+ "explainTop10": {
+  "normal": 0.458,
+  "adv": 0.258,
+  "chance": 0.305,
+  "graphs": 30,
+  "model": "GCN seed 0",
+  "botType": "camouflaged",
+  "p": 20
+ },
+ "gossipcop": {
+  "models": {
+   "GCN": {
+    "clean": 0.956,
+    "camo20": 0.925,
+    "camo20Adv": 0.929,
+    "naive20": 0.908,
+    "naive20Filter": 0.956
+   },
+   "GAT": {
+    "clean": 0.974,
+    "camo20": 0.901,
+    "camo20Adv": 0.923,
+    "naive20": 0.938,
+    "naive20Filter": 0.974
+   },
+   "SAGE": {
+    "clean": 0.975,
+    "camo20": 0.896,
+    "camo20Adv": 0.931,
+    "naive20": 0.923,
+    "naive20Filter": 0.975
+   }
+  },
+  "falseRemovalTest": 0.005
+ }
+}
