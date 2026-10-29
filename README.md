@@ -21,7 +21,7 @@ All results are in [results/results_summary.md](results/results_summary.md).
 ## How to run
 
 ```bash
-pip install torch torch_geometric networkx matplotlib pandas scikit-learn tabulate
+pip install torch torch_geometric networkx matplotlib pandas scikit-learn tabulate streamlit
 python src/run_all.py                 # check p0 p1 p2 p3 p4 on PolitiFact (~5 min on CPU once models are cached)
 python src/run_all.py p1g             # optional greedy attack (~10 min per model on CPU)
 python src/run_all.py p1g --arch GCN  # ...or one model per process, to parallelise
@@ -33,6 +33,16 @@ python src/run_all.py check p0 p1 p2 p3 p4 --dataset gossipcop   # outputs prefi
 Stages: `check` (data sanity), `p0` (baselines), `p1` (attack), `p2` (defenses), `p1g` (greedy attack, adaptive against each evaluated model), `p1t` (greedy transfer check), `p3` (explanations), `p4` (summary).
 Trained weights are cached in `results/models/`. Delete a file there to retrain that model.
 `run_all.ipynb` runs the same pipeline in Colab.
+
+### Live demo (offline: saved weights + cache only, no training, no internet)
+
+```bash
+python src/make_demo_cache.py   # once: picks 3 fake PolitiFact stories, writes results/demo_cache.pt (needs data/)
+streamlit run app.py            # the app: 4 steps (clean -> 20% smart bots -> bot filter -> adversarial training)
+python src/demo.py              # fallback: same 4 steps in the terminal + results/demo_flip.png
+```
+
+`results/demo_cache.pt` is committed, so `app.py` and `src/demo.py` run without the dataset.
 
 The UPFD data downloads automatically into `data/`. If the Google Drive download fails because of quota limits:
 1. Download the dataset zip from the Google Drive link in the [GNN-FakeNews README](https://github.com/safe-graph/GNN-FakeNews#datasets).
