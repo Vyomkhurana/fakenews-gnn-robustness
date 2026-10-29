@@ -1,0 +1,5 @@
+,bot_fraction,bot_fraction,bot_fraction_root_neighbours,bot_fraction_root_neighbours,top10_bot_share,top10_bot_share
+,mean,std,mean,std,mean,std
+model,,,,,,
+normal,0.165,0.01,0.305,0.16,0.458,0.28
+adv-trained,0.165,0.01,0.305,0.16,0.258,0.241

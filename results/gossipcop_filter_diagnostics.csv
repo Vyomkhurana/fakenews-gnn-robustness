@@ -1,0 +1,9 @@
+metric,value
+false removal rate (train genuine users),0.004423785954713821
+false removal rate (test genuine users),0.004899080842733383
+"bots removed (naive, p=0.05)",1.0
+"bots removed (naive, p=0.1)",1.0
+"bots removed (naive, p=0.2)",1.0
+"bots removed (camo, p=0.05)",0.013682189150264042
+"bots removed (camo, p=0.1)",0.015462577962577963
+"bots removed (camo, p=0.2)",0.014620854655413039
