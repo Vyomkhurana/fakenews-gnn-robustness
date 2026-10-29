@@ -47,7 +47,7 @@ Greedy black-box bots (optional, **seed 0 only**, 30 candidates per bot slot):
 | SAGE    | 0.1  | 0.81  | 0.809 | 0.067 |                    0.003 |
 | SAGE    | 0.2  | 0.778 | 0.778 | 0.133 |                    0.003 |
 
-## 3. Defenses: accuracy at p = 0.10 and 0.20 (3 seeds; greedy = seed 0)
+## 3. Defenses: accuracy at p = 0.10 and 0.20 (naive / camouflaged bots, 3 seeds, mean ± std)
 
 
 **p = 0.1**
@@ -56,13 +56,10 @@ Greedy black-box bots (optional, **seed 0 only**, 30 candidates per bot slot):
 |:--------|:-----------|:--------------|:----------------------|:------------------------|:------------------------|
 | GCN     | naive      | 0.851 ± 0.005 | 0.846 ± 0.005         | 0.811 ± 0.038           | 0.805 ± 0.033           |
 | GCN     | camo       | 0.840 ± 0.003 | 0.837 ± 0.005         | 0.799 ± 0.028           | 0.801 ± 0.030           |
-| GCN     | greedy     | 0.769         | 0.760                 | 0.751                   | 0.751                   |
 | GAT     | naive      | 0.860 ± 0.020 | 0.860 ± 0.020         | 0.855 ± 0.016           | 0.854 ± 0.011           |
 | GAT     | camo       | 0.855 ± 0.020 | 0.855 ± 0.020         | 0.852 ± 0.011           | 0.852 ± 0.011           |
-| GAT     | greedy     | 0.796         | 0.792                 | 0.801                   | 0.796                   |
 | SAGE    | naive      | 0.845 ± 0.014 | 0.843 ± 0.011         | 0.849 ± 0.011           | 0.848 ± 0.011           |
 | SAGE    | camo       | 0.843 ± 0.011 | 0.842 ± 0.009         | 0.849 ± 0.011           | 0.848 ± 0.009           |
-| SAGE    | greedy     | 0.810         | 0.805                 | 0.814                   | 0.810                   |
 
 **p = 0.2**
 
@@ -70,15 +67,26 @@ Greedy black-box bots (optional, **seed 0 only**, 30 candidates per bot slot):
 |:--------|:-----------|:--------------|:----------------------|:------------------------|:------------------------|
 | GCN     | naive      | 0.857 ± 0.003 | 0.846 ± 0.005         | 0.811 ± 0.037           | 0.805 ± 0.033           |
 | GCN     | camo       | 0.825 ± 0.009 | 0.822 ± 0.011         | 0.795 ± 0.022           | 0.795 ± 0.022           |
-| GCN     | greedy     | 0.620         | 0.620                 | 0.706                   | 0.701                   |
 | GAT     | naive      | 0.860 ± 0.020 | 0.860 ± 0.020         | 0.858 ± 0.011           | 0.854 ± 0.011           |
 | GAT     | camo       | 0.852 ± 0.027 | 0.852 ± 0.027         | 0.854 ± 0.016           | 0.854 ± 0.016           |
-| GAT     | greedy     | 0.769         | 0.769                 | 0.796                   | 0.796                   |
 | SAGE    | naive      | 0.843 ± 0.011 | 0.843 ± 0.011         | 0.848 ± 0.009           | 0.848 ± 0.011           |
 | SAGE    | camo       | 0.842 ± 0.014 | 0.842 ± 0.014         | 0.843 ± 0.010           | 0.843 ± 0.010           |
-| SAGE    | greedy     | 0.778         | 0.778                 | 0.792                   | 0.787                   |
 
-Clean accuracy with each defense switched on (cost of the defense when there is no attack):
+**Greedy black-box bots (seed 0 only).** *Adaptive* = greedy bots re-crafted by querying the adversarially trained model itself (the attacker knows the defended model). *Transfer* = the bots crafted against the normal model, fed unchanged to the adversarially trained model. The 0.62 → 0.71 GCN result quoted in the findings is the adaptive one. – = not run.
+
+| model   |    p |   attack |   attack + bot filter | attack + adv training (adaptive)   | attack + filter + adv (adaptive)   | attack + adv training (transfer)   | attack + filter + adv (transfer)   |
+|:--------|-----:|---------:|----------------------:|:-----------------------------------|:-----------------------------------|:-----------------------------------|:-----------------------------------|
+| GCN     | 0.05 |    0.814 |                 0.814 | –                                  | –                                  | –                                  | –                                  |
+| GCN     | 0.1  |    0.769 |                 0.76  | 0.751                              | 0.751                              | 0.751                              | 0.751                              |
+| GCN     | 0.2  |    0.62  |                 0.62  | 0.706                              | 0.701                              | 0.710                              | 0.710                              |
+| GAT     | 0.05 |    0.81  |                 0.805 | –                                  | –                                  | –                                  | –                                  |
+| GAT     | 0.1  |    0.796 |                 0.792 | 0.801                              | 0.796                              | 0.814                              | 0.810                              |
+| GAT     | 0.2  |    0.769 |                 0.769 | 0.796                              | 0.796                              | 0.796                              | 0.796                              |
+| SAGE    | 0.05 |    0.824 |                 0.819 | –                                  | –                                  | –                                  | –                                  |
+| SAGE    | 0.1  |    0.81  |                 0.805 | 0.814                              | 0.810                              | 0.814                              | 0.810                              |
+| SAGE    | 0.2  |    0.778 |                 0.778 | 0.792                              | 0.787                              | 0.792                              | 0.792                              |
+
+Clean accuracy with each defense switched on (cost of the defense when there is no attack). **All values are 3-seed means ± std** (seeds 0, 1, 2). Seed 0 alone, which is the model used for the greedy attack and the explanations: GCN normal 0.842 / adv-trained 0.769, GAT normal 0.846 / adv-trained 0.855, SAGE normal 0.842 / adv-trained 0.837.
 
 | model   | condition            | acc           | f1            |
 |:--------|:---------------------|:--------------|:--------------|
@@ -110,6 +118,8 @@ Bot filter diagnostics (thresholds learned on clean training users only):
 
 ## 4. Explainability: share of bots among the 10 most important nodes (GNNExplainer, GCN seed 0, camouflaged bots p = 0.20, first 30 fake test graphs)
 
+Bot type: **camouflaged** (a real-news training user's full feature vector + Gaussian noise, σ = 0.01). Chance level (`bot_fraction_root_neighbours`): every bot is attached directly to the root, so for each graph we take the share of bots among the root's direct (1-hop) neighbours, then average over the 30 graphs. This is the bot share expected in the top-10 if the explainer picked root neighbours at random. The share of bots among *all* nodes (`bot_fraction`) is lower and would overstate the effect.
+
 | model       |   bot_fraction (mean) |   bot_fraction (std) |   bot_fraction_root_neighbours (mean) |   bot_fraction_root_neighbours (std) |   top10_bot_share (mean) |   top10_bot_share (std) |
 |:------------|----------------------:|---------------------:|--------------------------------------:|-------------------------------------:|-------------------------:|------------------------:|
 | normal      |                 0.165 |                 0.01 |                                 0.305 |                                 0.16 |                    0.458 |                   0.28  |
@@ -132,11 +142,13 @@ Bot filter diagnostics (thresholds learned on clean training users only):
   - It costs almost nothing on clean data: 0.37 % of genuine test users removed, and clean accuracy unchanged.
   - It does not help against bots that copy real profiles.
 - **Adversarial training is the only defense that helps against greedy bots, and it costs clean accuracy for GCN.**
-  - At 20 % greedy bots (re-attacked against the defended model): GCN 0.620 → 0.706 (attack success rate 50.5 % → 13.5 %), GAT 0.769 → 0.796, SAGE 0.778 → 0.792.
-  - But GCN's clean accuracy drops from 0.846 to 0.804 (3-seed mean; seed 0 alone drops 0.842 → 0.769).
+  - At 20 % greedy bots, **adaptive** (greedy bots re-crafted by querying the adversarially trained model itself; seed 0): GCN 0.620 → 0.706 (attack success rate 50.5 % → 13.5 %), GAT 0.769 → 0.796, SAGE 0.778 → 0.792.
+  - **Transfer** (the bots crafted against the normal model, reused on the adversarially trained model) gives almost the same: GCN 0.710, GAT 0.796, SAGE 0.792. Re-crafting against the defended model barely helps the attacker.
+  - But GCN's clean accuracy drops from 0.846 to 0.804 (**3-seed mean**). For **seed 0**, which is the model in the greedy numbers above, it drops from 0.842 to 0.769. So against its own clean accuracy, the seed-0 adversarially trained GCN loses 6 points under the 20 % greedy attack (0.769 → 0.706), versus 22 points for the normal GCN (0.842 → 0.620).
   - Against random bots it brings no gain. GAT and SAGE keep their clean accuracy.
 - **Explanations show the model is distracted by bots.**
-  - Under 20 % camouflaged bots, bots are 45.8 % of the normal GCN's 10 most important nodes. The chance level is 30.5 %, which is the bot share among the root's direct neighbours, where all bots sit.
+  - Under 20 % **camouflaged** bots (GCN seed 0, first 30 fake test graphs), bots are 45.8 % of the normal GCN's 10 most important nodes.
+  - The chance level is 30.5 %. For each graph we take the share of bots among the root's direct (1-hop) neighbours, where every bot is attached, then average over the 30 graphs.
   - After adversarial training the share is 25.8 %, roughly chance.
   - The spread across graphs is large (std 0.24–0.28 over 30 graphs).
 

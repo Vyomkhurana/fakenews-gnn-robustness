@@ -15,11 +15,13 @@
   - It costs almost nothing on clean data: 0.37 % of genuine test users removed, and clean accuracy unchanged.
   - It does not help against bots that copy real profiles.
 - **Adversarial training is the only defense that helps against greedy bots, and it costs clean accuracy for GCN.**
-  - At 20 % greedy bots (re-attacked against the defended model): GCN 0.620 → 0.706 (attack success rate 50.5 % → 13.5 %), GAT 0.769 → 0.796, SAGE 0.778 → 0.792.
-  - But GCN's clean accuracy drops from 0.846 to 0.804 (3-seed mean; seed 0 alone drops 0.842 → 0.769).
+  - At 20 % greedy bots, **adaptive** (greedy bots re-crafted by querying the adversarially trained model itself; seed 0): GCN 0.620 → 0.706 (attack success rate 50.5 % → 13.5 %), GAT 0.769 → 0.796, SAGE 0.778 → 0.792.
+  - **Transfer** (the bots crafted against the normal model, reused on the adversarially trained model) gives almost the same: GCN 0.710, GAT 0.796, SAGE 0.792. Re-crafting against the defended model barely helps the attacker.
+  - But GCN's clean accuracy drops from 0.846 to 0.804 (**3-seed mean**). For **seed 0**, which is the model in the greedy numbers above, it drops from 0.842 to 0.769. So against its own clean accuracy, the seed-0 adversarially trained GCN loses 6 points under the 20 % greedy attack (0.769 → 0.706), versus 22 points for the normal GCN (0.842 → 0.620).
   - Against random bots it brings no gain. GAT and SAGE keep their clean accuracy.
 - **Explanations show the model is distracted by bots.**
-  - Under 20 % camouflaged bots, bots are 45.8 % of the normal GCN's 10 most important nodes. The chance level is 30.5 %, which is the bot share among the root's direct neighbours, where all bots sit.
+  - Under 20 % **camouflaged** bots (GCN seed 0, first 30 fake test graphs), bots are 45.8 % of the normal GCN's 10 most important nodes.
+  - The chance level is 30.5 %. For each graph we take the share of bots among the root's direct (1-hop) neighbours, where every bot is attached, then average over the 30 graphs.
   - After adversarial training the share is 25.8 %, roughly chance.
   - The spread across graphs is large (std 0.24–0.28 over 30 graphs).
 

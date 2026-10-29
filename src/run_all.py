@@ -227,6 +227,28 @@ def p1g(seed=0):
         pd.DataFrame(rows).to_csv(out(f'greedy_{a}.csv'), index=False)
 
 
+def p1t(seed=0):
+    """Non-adaptive comparison for p1g: greedy bots crafted against the NORMAL model, then fed to the adv-trained
+    model (transfer). p1g's adv rows are adaptive (bots crafted against the adv-trained model itself)."""
+    from attack import Bots, attack_set
+    from defense import BotFilter
+    tr, va, te = splits('content')
+    bots, filt = Bots(tr), BotFilter(tr)
+    adv, rows = adv_models(tr, va, bots), []
+    for a in [args.arch] if args.arch else ARCHS:
+        base, m = train(a, tr, va, seed, f'{DS}_content_{a}_s{seed}'), adv[a, seed]
+        y, clean_pred, _ = predict(m, te)
+        caught = (y == 1) & (clean_pred == 1)
+        for p in [0.10, 0.20]:
+            att = attack_set(te, p, 'greedy', bots, seed, model=base)
+            for d, gs in [('adv', att), ('both', [filt(g) for g in att])]:
+                _, pred, _ = predict(m, gs)
+                rows.append(dict(model=a, defense=d, seed=seed, bot_type='greedy', p=p, **metrics(y, pred),
+                                 asr=float(((pred == 0) & caught).sum() / caught.sum())))
+            print(a, 'transfer', p, rows[-2]['acc'], flush=True)
+    pd.DataFrame(rows).to_csv(out('greedy_transfer.csv'), index=False)
+
+
 def p3(arch='GCN', seed=0, bt='camo', p=0.20, n_agg=30):
     import matplotlib.pyplot as plt
     from attack import Bots, attack_set
@@ -281,21 +303,27 @@ def plot_greedy_defense(p=0.20, seed=0):
     d = pd.read_csv(out('defense_per_seed.csv'))
     clean = d[(d.seed == seed) & (d.p == 0) & (d.defense == 'none') & (d.bot_type == 'naive')].set_index('model')['acc']
     g = gr[gr.p == p].set_index(['model', 'defense'])['acc']
-    archs = [a for a in ARCHS if a in clean.index and (a, 'none') in g.index]
-    conds = [('clean', None), ('attack', 'none'), ('attack+filter', 'filter'), ('attack+adv', 'adv'), ('attack+both', 'both')]
+    conds = [('clean', None), ('attack', 'none'), ('attack+filter', 'filter'), ('attack+adv (adaptive)', 'adv'),
+             ('attack+both (adaptive)', 'both')]
     cols = ['#52514e', '#e34948', '#eda100', '#2a78d6', '#1baf7a']
-    fig, ax = plt.subplots(figsize=(8, 4.2))
+    if osp.exists(out('greedy_transfer.csv')):
+        t = pd.read_csv(out('greedy_transfer.csv'))
+        g = pd.concat([g, t[(t.p == p) & (t.defense == 'adv')].assign(defense='adv_transfer').set_index(['model', 'defense'])['acc']])
+        conds.append(('attack+adv (transfer)', 'adv_transfer')); cols.append('#6250d6')
+    archs = [a for a in ARCHS if a in clean.index and all(k is None or (a, k) in g.index for _, k in conds)]
+    fig, ax = plt.subplots(figsize=(9, 4.4))
     x = np.arange(len(archs))
+    w = 0.8 / len(conds)
     for j, ((name, key), c) in enumerate(zip(conds, cols)):
         v = [clean[a] if key is None else g[a, key] for a in archs]
-        xs = x + (j - 2) * 0.16
-        ax.bar(xs, v, 0.15, color=c, edgecolor='white', linewidth=2, label=name)
+        xs = x + (j - (len(conds) - 1) / 2) * w
+        ax.bar(xs, v, w * 0.95, color=c, edgecolor='white', linewidth=2, label=name)
         for xi, vi in zip(xs, v):
             ax.text(xi, vi + 0.005, f'{vi:.2f}', ha='center', fontsize=7, color='#0b0b0b')
     ax.set(xticks=x, ylim=(0.5, 1.0), ylabel='Test accuracy (seed 0)',
            title=f'Greedy black-box bots ({int(p * 100)}% per fake graph) on {DS.capitalize()}: defenses')
     ax.set_xticklabels(archs)
-    ax.legend(frameon=False, fontsize=8, ncol=5, loc='upper center')
+    ax.legend(frameon=False, fontsize=7.5, ncol=3, loc='upper center')
     ax.spines[['top', 'right']].set_visible(False); ax.grid(axis='y', alpha=.3)
     fig.tight_layout(); fig.savefig(out('defense_bars_greedy.png'), dpi=150); plt.close(fig)
 
@@ -311,6 +339,7 @@ def p4():
 
     d = pd.read_csv(out('defense_per_seed.csv'))
     gr = greedy_df()
+    tr_ = pd.read_csv(out('greedy_transfer.csv')) if osp.exists(out('greedy_transfer.csv')) else None
     agg = d.groupby(['model', 'defense', 'bot_type', 'p'])[['acc', 'f1', 'asr']].agg(['mean', 'std'])
     cell = lambda k, c: fmt(agg.loc[k, (c, 'mean')], agg.loc[k, (c, 'std')])
     rows = []
@@ -327,10 +356,15 @@ def p4():
                     k = (a, dname, bt, p)
                     rows.append(dict(model=a, condition=lab, bot_type=bt, p=p, acc=cell(k, 'acc'), f1=cell(k, 'f1'),
                                      asr=cell(k, 'asr'), seeds=3))
-        if gr is not None:
+        if gr is not None:  # p1g: bots crafted against the model being evaluated, so adv rows are adaptive
             for r in gr[gr.model == a].itertuples():
-                lab = {'none': 'attack', 'filter': 'attack + bot filter', 'adv': 'attack + adv training',
-                       'both': 'attack + filter + adv'}[r.defense]
+                lab = {'none': 'attack', 'filter': 'attack + bot filter', 'adv': 'attack + adv training (adaptive)',
+                       'both': 'attack + filter + adv (adaptive)'}[r.defense]
+                rows.append(dict(model=a, condition=lab, bot_type='greedy', p=r.p, acc=f'{r.acc:.3f}', f1=f'{r.f1:.3f}',
+                                 asr=f'{r.asr:.3f}', seeds=1))
+        if tr_ is not None:  # p1t: bots crafted against the normal model, evaluated on the adv-trained model
+            for r in tr_[tr_.model == a].itertuples():
+                lab = {'adv': 'attack + adv training (transfer)', 'both': 'attack + filter + adv (transfer)'}[r.defense]
                 rows.append(dict(model=a, condition=lab, bot_type='greedy', p=r.p, acc=f'{r.acc:.3f}', f1=f'{r.f1:.3f}',
                                  asr=f'{r.asr:.3f}', seeds=1))
     rep = pd.DataFrame(rows)
@@ -346,13 +380,25 @@ def p4():
         g0 = gr[gr.defense == 'none'][['model', 'p', 'acc', 'f1', 'asr', 'bots_removed_by_filter']].round(3)
         s += ['\nGreedy black-box bots (optional, **seed 0 only**, 30 candidates per bot slot):\n', md(g0)]
 
-    s += ['\n## 3. Defenses: accuracy at p = 0.10 and 0.20 (3 seeds; greedy = seed 0)\n']
+    s += ['\n## 3. Defenses: accuracy at p = 0.10 and 0.20 (naive / camouflaged bots, 3 seeds, mean ± std)\n']
     for p in [0.10, 0.20]:
-        t = rep[(rep.p == p) | (rep.condition == 'normal (clean test)')]
+        t = rep[(rep.p == p) & (rep.bot_type != 'greedy')]
         t = t.pivot_table(index=['model', 'bot_type'], columns='condition', values='acc', aggfunc='first', sort=False)
         t = t.reindex(columns=['attack', 'attack + bot filter', 'attack + adv training', 'attack + filter + adv']).dropna(how='all')
         s += [f'\n**p = {p}**\n', md(t.reset_index())]
-    s += ['\nClean accuracy with each defense switched on (cost of the defense when there is no attack):\n',
+    if gr is not None:
+        t = rep[rep.bot_type == 'greedy'].pivot_table(index=['model', 'p'], columns='condition', values='acc',
+                                                       aggfunc='first', sort=False)
+        s += ['\n**Greedy black-box bots (seed 0 only).** *Adaptive* = greedy bots re-crafted by querying the '
+              'adversarially trained model itself (the attacker knows the defended model). *Transfer* = the bots '
+              'crafted against the normal model, fed unchanged to the adversarially trained model. The 0.62 → 0.71 '
+              'GCN result quoted in the findings is the adaptive one. – = not run.\n',
+              md(t.reset_index().astype(object).fillna('–'))]
+    sd = d[(d.p == 0) & (d.bot_type == 'naive') & (d.seed == 0)].set_index(['model', 'defense'])['acc']
+    s += ['\nClean accuracy with each defense switched on (cost of the defense when there is no attack). '
+          '**All values are 3-seed means ± std** (seeds 0, 1, 2). Seed 0 alone, which is the model used for the '
+          'greedy attack and the explanations: ' +
+          ', '.join(f'{a} normal {sd[a, "none"]:.3f} / adv-trained {sd[a, "adv"]:.3f}' for a in ARCHS) + '.\n',
           md(rep[rep.p == 0][['model', 'condition', 'acc', 'f1']])]
     s += ['\nBot filter diagnostics (thresholds learned on clean training users only):\n',
           md(pd.read_csv(out('filter_diagnostics.csv')).round(4))]
@@ -360,7 +406,13 @@ def p4():
         e = pd.read_csv(out('explain_top10_bots.csv'), header=[0, 1], index_col=0).round(3)
         e.columns = [f'{a} ({b})' for a, b in e.columns]
         s += ['\n## 4. Explainability: share of bots among the 10 most important nodes (GNNExplainer, GCN seed 0, '
-              'camouflaged bots p = 0.20, first 30 fake test graphs)\n', md(e.reset_index())]
+              'camouflaged bots p = 0.20, first 30 fake test graphs)\n',
+              'Bot type: **camouflaged** (a real-news training user\'s full feature vector + Gaussian noise, σ = 0.01). '
+              'Chance level (`bot_fraction_root_neighbours`): every bot is attached directly to the root, so for each '
+              'graph we take the share of bots among the root\'s direct (1-hop) neighbours, then average over the 30 '
+              'graphs. This is the bot share expected in the top-10 if the explainer picked root neighbours at random. '
+              'The share of bots among *all* nodes (`bot_fraction`) is lower and would overstate the effect.\n',
+              md(e.reset_index())]
     if osp.exists(out('findings.md')):
         s += ['\n' + open(out('findings.md'), encoding='utf-8').read()]
     open(out('results_summary.md'), 'w', encoding='utf-8').write('\n'.join(s) + '\n')

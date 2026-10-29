@@ -25,11 +25,12 @@ pip install torch torch_geometric networkx matplotlib pandas scikit-learn tabula
 python src/run_all.py                 # check p0 p1 p2 p3 p4 on PolitiFact (~5 min on CPU once models are cached)
 python src/run_all.py p1g             # optional greedy attack (~10 min per model on CPU)
 python src/run_all.py p1g --arch GCN  # ...or one model per process, to parallelise
+python src/run_all.py p1t             # optional: greedy bots crafted on the normal model, fed to the adv-trained one (transfer)
 python src/run_all.py p4              # rebuild results_summary.md / robustness_report.csv / attack_curve.png
 python src/run_all.py check p0 p1 p2 p3 p4 --dataset gossipcop   # outputs prefixed gossipcop_
 ```
 
-Stages: `check` (data sanity), `p0` (baselines), `p1` (attack), `p2` (defenses), `p1g` (greedy attack), `p3` (explanations), `p4` (summary).
+Stages: `check` (data sanity), `p0` (baselines), `p1` (attack), `p2` (defenses), `p1g` (greedy attack, adaptive against each evaluated model), `p1t` (greedy transfer check), `p3` (explanations), `p4` (summary).
 Trained weights are cached in `results/models/`. Delete a file there to retrain that model.
 `run_all.ipynb` runs the same pipeline in Colab.
 
